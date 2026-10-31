@@ -1,0 +1,128 @@
+tick=0 monotonic_s=191012.571607
+class htb 1:fffe root rate 10Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 298 bytes 5 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 19075 ctokens: 19075
+
+class htb 1:1 parent 1:fffe leaf 11: prio 1 rate 500Kbit ceil 1Mbit burst 1600b cburst 1600b 
+ Sent 74 bytes 1 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 1 borrowed: 0 giants: 0
+ tokens: 381500 ctokens: 190750
+
+class htb 1:2 parent 1:fffe leaf 22: prio 2 rate 4Mbit ceil 6Mbit burst 1600b cburst 1599b 
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 50000 ctokens: 33328
+
+class htb 1:3 parent 1:fffe leaf 33: prio 3 rate 1Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 200000 ctokens: 20000
+
+class htb 1:4 parent 1:fffe leaf 44: prio 4 rate 100Kbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 224 bytes 4 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 4 borrowed: 0 giants: 0
+ tokens: 1826147 ctokens: 19397
+
+
+tick=59 monotonic_s=191071.572859
+class htb 1:fffe root rate 10Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 39738769 bytes 32326 pkt (dropped 0, overlimits 9199 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 7397 borrowed: 0 giants: 0
+ tokens: -17850 ctokens: -17850
+
+class htb 1:1 parent 1:fffe leaf 11: prio 1 rate 1Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 929557 bytes 4607 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 4607 borrowed: 0 giants: 0
+ tokens: 174750 ctokens: 17475
+
+class htb 1:2 parent 1:fffe leaf 22: prio 2 rate 5Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 12939712 bytes 10437 pkt (dropped 0, overlimits 9 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 10250 borrowed: 187 giants: 0
+ tokens: 47937 ctokens: 31953
+
+class htb 1:3 parent 1:fffe leaf 33: prio 3 rate 1Mbit ceil 5Mbit burst 1600b cburst 1600b 
+ Sent 25851118 bytes 17087 pkt (dropped 127, overlimits 8447 requeues 0) 
+ backlog 275548b 97p requeues 0
+ lended: 2075 borrowed: 7210 giants: 0
+ tokens: -91895 ctokens: -74744
+
+class htb 1:4 parent 1:fffe leaf 44: prio 4 rate 100Kbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 18382 bytes 195 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 195 borrowed: 0 giants: 0
+ tokens: 1786527 ctokens: 18775
+
+
+tick=0 monotonic_s=200142.641515
+class htb 1:fffe root rate 10Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 294 bytes 5 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 18775 ctokens: 18775
+
+class htb 1:1 parent 1:fffe leaf 11: prio 1 rate 500Kbit ceil 1Mbit burst 1600b cburst 1600b 
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 400000 ctokens: 200000
+
+class htb 1:2 parent 1:fffe leaf 22: prio 2 rate 4Mbit ceil 6Mbit burst 1600b cburst 1599b 
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 50000 ctokens: 33328
+
+class htb 1:3 parent 1:fffe leaf 33: prio 3 rate 1Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 0 borrowed: 0 giants: 0
+ tokens: 200000 ctokens: 20000
+
+class htb 1:4 parent 1:fffe leaf 44: prio 4 rate 100Kbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 294 bytes 5 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 98b 1p requeues 0
+ lended: 5 borrowed: 0 giants: 0
+ tokens: 1826232 ctokens: 18775
+
+
+tick=59 monotonic_s=200201.642627
+class htb 1:fffe root rate 10Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 56372582 bytes 47729 pkt (dropped 0, overlimits 11004 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 10940 borrowed: 0 giants: 0
+ tokens: -17019 ctokens: -17019
+
+class htb 1:1 parent 1:fffe leaf 11: prio 1 rate 1Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 929355 bytes 4606 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 202b 1p requeues 0
+ lended: 4606 borrowed: 0 giants: 0
+ tokens: 174750 ctokens: 17475
+
+class htb 1:2 parent 1:fffe leaf 22: prio 2 rate 5Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 43404081 bytes 34972 pkt (dropped 148, overlimits 4201 requeues 0) 
+ backlog 4968b 4p requeues 0
+ lended: 26756 borrowed: 8216 giants: 0
+ tokens: -18167 ctokens: 2360
+
+class htb 1:3 parent 1:fffe leaf 33: prio 3 rate 312496bit ceil 312496bit burst 1599b cburst 1599b 
+ Sent 12020484 bytes 7950 pkt (dropped 324, overlimits 4128 requeues 0) 
+ backlog 202876b 99p requeues 0
+ lended: 1885 borrowed: 2724 giants: 0
+ tokens: -935294 ctokens: -1210437
+
+class htb 1:4 parent 1:fffe leaf 44: prio 4 rate 100Kbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 18662 bytes 201 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 201 borrowed: 0 giants: 0
+ tokens: 1877500 ctokens: 18775
+
+

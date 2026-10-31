@@ -1,0 +1,62 @@
+# Reproduction of the project report's setup (Tables I-II): NORMAL/PROTECT
+# rates, scenarios S1-S4 (120 s each) and the five comparable setups.
+# Only overrides are listed; everything else comes from config.yaml.
+base: ../config.yaml
+runtime:
+  results_dir: results/report
+traffic:
+  voip_rate: 640K
+  video_rate: 4M
+  # iperf3 warns that 1460 exceeds the TCP MSS ahead of its JSON; the
+  # runner's iperf3 JSON reader skips that line.
+  video_packet_bytes: 1460
+  bulk_flows: 4
+sla:
+  class_targets_mbps: {voip: 0.64, video: 4.0, bulk: 1.0}
+qos:
+  queues:
+    voip: {min_bps: 1000000, max_bps: 10000000, priority: 1, floor_bps: 1000000}
+    video: {min_bps: 4000000, max_bps: 10000000, priority: 2, floor_bps: 4000000}
+    bulk: {min_bps: 1000000, max_bps: 10000000, priority: 3, floor_bps: 100000}
+  static_rates:
+    voip: {min_bps: 1000000, max_bps: 10000000}
+    video: {min_bps: 4000000, max_bps: 10000000}
+    bulk: {min_bps: 1000000, max_bps: 10000000}
+engines:
+  proactive:
+    protect_rates:
+      voip: {min_bps: 1500000, max_bps: 10000000}
+      video: {min_bps: 5000000, max_bps: 10000000}
+      bulk: {min_bps: 1000000, max_bps: 4000000}
+# Each extra stream uses its own iperf3 port (class base port + 1, + 2, ...)
+# because one iperf3 server serves one test at a time.
+scenarios:
+  # S1 steady: VoIP 640 kbit/s, video 4 Mbit/s, bulk TCP with 4 streams.
+  S1: {duration: 120, bulk_start: 0}
+  # S2 bulk flood: S1 plus 8 more bulk TCP streams from 30 s.
+  S2:
+    duration: 120
+    bulk_start: 0
+    streams: [{cls: bulk, start: 30, stop: 120, flows: 8}]
+  # S3 video bursts: video 2 Mbit/s plus 4 Mbit/s bursts.
+  S3:
+    duration: 120
+    bulk_start: 0
+    video_rate_mbps: 2.0
+    streams:
+      - {cls: video, start: 15, stop: 30, rate_mbps: 4.0}
+      - {cls: video, start: 45, stop: 60, rate_mbps: 4.0}
+      - {cls: video, start: 75, stop: 90, rate_mbps: 4.0}
+      - {cls: video, start: 105, stop: 120, rate_mbps: 4.0}
+  # S4 VoIP ramp: a new 320 kbit/s VoIP stream (5 calls) at 0, 30, 60, 90 s.
+  S4:
+    duration: 120
+    bulk_start: 0
+    voip_rate_mbps: 0.32
+    streams:
+      - {cls: voip, start: 30, stop: 120, rate_mbps: 0.32}
+      - {cls: voip, start: 60, stop: 120, rate_mbps: 0.32}
+      - {cls: voip, start: 90, stop: 120, rate_mbps: 0.32}
+experiment:
+  default_scenarios: [S1, S2, S3, S4]
+  default_modes: [none, static, reactive, proactive, fq_codel_ecn]

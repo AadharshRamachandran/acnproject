@@ -1,0 +1,31 @@
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 59672
+[  5] local 10.0.0.11 port 5061 connected to 10.0.0.1 port 45818
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  10.5 KBytes  85.8 Kbits/sec  14.927 ms  0/67 (0%)  
+[  5]   1.00-2.00   sec  9.69 KBytes  79.4 Kbits/sec  6.070 ms  264/326 (81%)  
+[  5]   2.00-3.00   sec  9.69 KBytes  79.4 Kbits/sec  0.347 ms  1112/1174 (95%)  
+[  5]   3.00-4.00   sec  9.69 KBytes  79.4 Kbits/sec  0.291 ms  1113/1175 (95%)  
+[  5]   4.00-5.00   sec  70.6 KBytes   579 Kbits/sec  2.666 ms  2358/2810 (84%)  
+[  5]   5.00-6.00   sec   196 KBytes  1.61 Mbits/sec  0.330 ms  168/1423 (12%)  
+[  5]   6.00-7.00   sec   183 KBytes  1.50 Mbits/sec  0.399 ms  0/1171 (0%)  
+[  5]   7.00-8.00   sec   183 KBytes  1.50 Mbits/sec  0.212 ms  0/1173 (0%)  
+[  5]   8.00-9.00   sec   180 KBytes  1.48 Mbits/sec  0.606 ms  0/1155 (0%)  
+[  5]   9.00-10.00  sec  9.69 KBytes  79.4 Kbits/sec  15.053 ms  0/62 (0%)  
+[  5]  10.00-11.00  sec  9.69 KBytes  79.4 Kbits/sec  4.887 ms  343/405 (85%)  
+[  5]  11.00-12.00  sec  9.69 KBytes  79.4 Kbits/sec  0.355 ms  1112/1174 (95%)  
+[  5]  12.00-13.00  sec  9.69 KBytes  79.4 Kbits/sec  0.285 ms  1113/1175 (95%)  
+[  5]  13.00-14.00  sec  9.53 KBytes  78.1 Kbits/sec  0.278 ms  1094/1155 (95%)  
+[  5]  14.00-15.00  sec  9.69 KBytes  79.4 Kbits/sec  0.330 ms  1112/1174 (95%)  
+[  5]  15.00-16.00  sec  9.69 KBytes  79.4 Kbits/sec  0.288 ms  1112/1174 (95%)  
+[  5]  16.00-16.67  sec  6.41 KBytes  78.7 Kbits/sec  0.398 ms  735/776 (95%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-16.7 sec  2 datagrams received out-of-order
+[  5]   0.00-16.67  sec   927 KBytes   456 Kbits/sec  0.398 ms  11636/17569 (66%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------

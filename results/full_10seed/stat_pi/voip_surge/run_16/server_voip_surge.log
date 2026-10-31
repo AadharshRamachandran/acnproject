@@ -1,0 +1,31 @@
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 34816
+[  5] local 10.0.0.11 port 5061 connected to 10.0.0.1 port 54167
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  10.5 KBytes  85.7 Kbits/sec  14.925 ms  0/67 (0%)  
+[  5]   1.00-2.00   sec  9.69 KBytes  79.4 Kbits/sec  6.307 ms  264/326 (81%)  
+[  5]   2.00-3.00   sec  9.69 KBytes  79.4 Kbits/sec  0.466 ms  1112/1174 (95%)  
+[  5]   3.00-4.00   sec  9.53 KBytes  78.1 Kbits/sec  0.642 ms  1114/1175 (95%)  
+[  5]   4.00-5.00   sec  9.69 KBytes  79.4 Kbits/sec  0.511 ms  1112/1174 (95%)  
+[  5]   5.00-6.00   sec  9.53 KBytes  78.1 Kbits/sec  0.773 ms  1102/1163 (95%)  
+[  5]   6.00-7.00   sec  9.69 KBytes  79.4 Kbits/sec  0.434 ms  1111/1173 (95%)  
+[  5]   7.00-8.00   sec  9.69 KBytes  79.4 Kbits/sec  0.439 ms  1104/1166 (95%)  
+[  5]   8.00-9.00   sec  35.3 KBytes   289 Kbits/sec  0.575 ms  2844/3070 (93%)  
+[  5]   9.00-10.00  sec   183 KBytes  1.50 Mbits/sec  0.307 ms  0/1172 (0%)  
+[  5]  10.00-11.00  sec   171 KBytes  1.40 Mbits/sec  3.359 ms  0/1097 (0%)  
+[  5]  11.00-12.00  sec  10.5 KBytes  85.8 Kbits/sec  14.584 ms  0/67 (0%)  
+[  5]  12.00-13.00  sec  9.69 KBytes  79.4 Kbits/sec  2.932 ms  488/550 (89%)  
+[  5]  13.00-14.00  sec  9.69 KBytes  79.4 Kbits/sec  0.511 ms  1017/1079 (94%)  
+[  5]  14.00-15.00  sec  9.69 KBytes  79.4 Kbits/sec  0.374 ms  1112/1174 (95%)  
+[  5]  15.00-16.00  sec  9.69 KBytes  79.4 Kbits/sec  0.710 ms  1113/1175 (95%)  
+[  5]  16.00-16.66  sec  6.25 KBytes  77.5 Kbits/sec  0.443 ms  717/757 (95%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-16.7 sec  1 datagrams received out-of-order
+[  5]   0.00-16.66  sec   523 KBytes   257 Kbits/sec  0.443 ms  14210/17559 (81%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------

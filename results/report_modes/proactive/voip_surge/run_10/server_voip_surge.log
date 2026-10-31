@@ -1,0 +1,30 @@
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 46232
+[  5] local 10.0.0.11 port 5061 connected to 10.0.0.1 port 33562
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  91.1 KBytes   746 Kbits/sec  1.438 ms  370/953 (39%)  
+[  5]   1.00-2.00   sec   195 KBytes  1.60 Mbits/sec  0.560 ms  84/1332 (6.3%)  
+[  5]   2.00-3.00   sec   183 KBytes  1.50 Mbits/sec  0.783 ms  0/1173 (0%)  
+[  5]   3.00-4.00   sec   183 KBytes  1.50 Mbits/sec  0.625 ms  0/1171 (0%)  
+[  5]   4.00-5.00   sec   183 KBytes  1.50 Mbits/sec  0.680 ms  0/1172 (0%)  
+[  5]   5.00-6.00   sec   184 KBytes  1.50 Mbits/sec  0.635 ms  0/1175 (0%)  
+[  5]   6.00-7.00   sec   177 KBytes  1.45 Mbits/sec  1.107 ms  0/1133 (0%)  
+[  5]   7.00-8.00   sec  92.8 KBytes   760 Kbits/sec  1.445 ms  434/1028 (42%)  
+[  5]   8.00-9.00   sec  94.1 KBytes   771 Kbits/sec  1.043 ms  569/1171 (49%)  
+[  5]   9.00-10.00  sec   113 KBytes   927 Kbits/sec  0.536 ms  630/1354 (47%)  
+[  5]  10.00-11.00  sec   183 KBytes  1.50 Mbits/sec  0.506 ms  0/1173 (0%)  
+[  5]  11.00-12.00  sec   183 KBytes  1.50 Mbits/sec  0.682 ms  0/1170 (0%)  
+[  5]  12.00-13.00  sec   183 KBytes  1.50 Mbits/sec  0.566 ms  0/1174 (0%)  
+[  5]  13.00-14.00  sec   183 KBytes  1.50 Mbits/sec  0.598 ms  0/1173 (0%)  
+[  5]  14.00-15.00  sec   183 KBytes  1.50 Mbits/sec  0.626 ms  0/1169 (0%)  
+[  5]  15.00-15.05  sec  8.91 KBytes  1.50 Mbits/sec  0.652 ms  0/57 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-15.0 sec  8 datagrams received out-of-order
+[  5]   0.00-15.05  sec  2.36 MBytes  1.32 Mbits/sec  0.652 ms  2087/17578 (12%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------

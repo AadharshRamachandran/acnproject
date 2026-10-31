@@ -1,0 +1,38 @@
+﻿docker :  Container acnprojectendsem-testbed-run-ed8297bb545b Creating 
+At line:1 char:372
++ ... irm:$false; docker compose run --rm -T testbed python3 run_experiment ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Container acnp...b545b Creating :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Container acnprojectendsem-testbed-run-ed8297bb545b Created 
+Environment checks passed (Linux, OVS, Mininet, iperf3, tc, Python modules).
+[1/100] skipping valid none/standard/run_7
+[2/100] skipping valid none/standard/run_8
+[3/100] skipping valid none/standard/run_9
+[4/100] skipping valid none/standard/run_10
+[5/100] skipping valid none/standard/run_11
+[6/100] mode=none scenario=flash_crowd seed=7
+*** Error setting resource limits. Mininet's performance may be affected.
+2026-10-28 16:08:06,994 WARNING *** Error setting resource limits. Mininet's performance may be affected.
+
+  saved /app/results/report_modes/none/flash_crowd/run_7
+[7/100] skipping valid none/flash_crowd/run_8
+[8/100] skipping valid none/flash_crowd/run_9
+[9/100] skipping valid none/flash_crowd/run_10
+[10/100] skipping valid none/flash_crowd/run_11
+[11/100] skipping valid none/voip_surge/run_7
+[12/100] skipping valid none/voip_surge/run_8
+[13/100] skipping valid none/voip_surge/run_9
+[14/100] skipping valid none/voip_surge/run_10
+[15/100] skipping valid none/voip_surge/run_11
+[16/100] mode=none scenario=video_step seed=7
+  saved /app/results/report_modes/none/video_step/run_7
+[17/100] mode=none scenario=video_step seed=8
+  saved /app/results/report_modes/none/video_step/run_8
+[18/100] mode=none scenario=video_step seed=9
+  saved /app/results/report_modes/none/video_step/run_9
+[19/100] mode=none scenario=video_step seed=10
+  saved /app/results/report_modes/none/video_step/run_10
+[20/100] mode=none scenario=video_step seed=11
+

@@ -1,0 +1,117 @@
+﻿docker :  Container acnprojectendsem-testbed-run-13177dafee4d Creating 
+At line:1 char:302
++ ... tch {} } }; docker compose run --rm -T testbed sh -c "python3 run_exp ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Container acnp...fee4d Creating :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Container acnprojectendsem-testbed-run-13177dafee4d Created 
+Environment checks passed (Linux, OVS, Mininet, iperf3, tc, Python modules).
+Training seeded Q table (1000 episodes)...
+Trained 1000 episodes in 1.378s; saved results/report_modes/q_table.json
+[1/20] mode=fused_qlearning scenario=standard seed=7
+*** Error setting resource limits. Mininet's performance may be affected.
+2026-10-29 05:44:21,525 WARNING *** Error setting resource limits. Mininet's performance may be affected.
+
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:44:22,756 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/standard/run_7
+[2/20] mode=fused_qlearning scenario=standard seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:45:26,833 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/standard/run_8
+[3/20] mode=fused_qlearning scenario=standard seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:46:29,896 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/standard/run_9
+[4/20] mode=fused_qlearning scenario=standard seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:47:33,172 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/standard/run_10
+[5/20] mode=fused_qlearning scenario=standard seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:48:35,818 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/standard/run_11
+[6/20] mode=fused_qlearning scenario=flash_crowd seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:49:38,367 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/flash_crowd/run_7
+[7/20] mode=fused_qlearning scenario=flash_crowd seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:50:43,200 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/flash_crowd/run_8
+[8/20] mode=fused_qlearning scenario=flash_crowd seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:51:45,359 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/flash_crowd/run_9
+[9/20] mode=fused_qlearning scenario=flash_crowd seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:52:48,676 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/flash_crowd/run_10
+[10/20] mode=fused_qlearning scenario=flash_crowd seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:53:52,047 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/flash_crowd/run_11
+[11/20] mode=fused_qlearning scenario=voip_surge seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:54:54,778 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/voip_surge/run_7
+[12/20] mode=fused_qlearning scenario=voip_surge seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:56:13,057 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/voip_surge/run_8
+[13/20] mode=fused_qlearning scenario=voip_surge seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:57:31,168 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/voip_surge/run_9
+[14/20] mode=fused_qlearning scenario=voip_surge seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 05:58:49,292 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/voip_surge/run_10
+[15/20] mode=fused_qlearning scenario=voip_surge seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 06:00:06,574 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/voip_surge/run_11
+[16/20] mode=fused_qlearning scenario=video_step seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 06:01:25,335 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/video_step/run_7
+[17/20] mode=fused_qlearning scenario=video_step seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 06:02:43,146 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/video_step/run_8
+[18/20] mode=fused_qlearning scenario=video_step seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 06:04:01,083 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/video_step/run_9
+[19/20] mode=fused_qlearning scenario=video_step seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 06:05:18,185 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/video_step/run_10
+[20/20] mode=fused_qlearning scenario=video_step seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-29 06:06:36,697 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/fused_qlearning/video_step/run_11
+All requested runs finished. Generate aggregates with: python3 analyze.py --results results/report_modes
+Ignoring 29 run summary/summaries with invalid or incomplete telemetry.
+results/report_modes/analysis

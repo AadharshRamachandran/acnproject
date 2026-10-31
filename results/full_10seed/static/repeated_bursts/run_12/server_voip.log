@@ -1,0 +1,28 @@
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5060
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 50836
+[  5] local 10.0.0.11 port 5060 connected to 10.0.0.1 port 36262
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  11.9 KBytes  97.3 Kbits/sec  0.133 ms  0/76 (0%)  
+[  5]   1.00-2.00   sec  12.2 KBytes  99.8 Kbits/sec  0.058 ms  0/78 (0%)  
+[  5]   2.00-3.00   sec  12.2 KBytes  99.8 Kbits/sec  0.097 ms  0/78 (0%)  
+[  5]   3.00-4.00   sec  12.2 KBytes  99.8 Kbits/sec  0.095 ms  0/78 (0%)  
+[  5]   4.00-5.00   sec  12.2 KBytes  99.8 Kbits/sec  0.082 ms  0/78 (0%)  
+[  5]   5.00-6.00   sec  12.3 KBytes   101 Kbits/sec  0.081 ms  0/79 (0%)  
+[  5]   6.00-7.00   sec  12.2 KBytes  99.8 Kbits/sec  0.197 ms  0/78 (0%)  
+[  5]   7.00-8.00   sec  12.2 KBytes  99.8 Kbits/sec  0.077 ms  0/78 (0%)  
+[  5]   8.00-9.00   sec  12.2 KBytes  99.8 Kbits/sec  0.090 ms  0/78 (0%)  
+[  5]   9.00-10.00  sec  12.2 KBytes  99.8 Kbits/sec  0.071 ms  0/78 (0%)  
+[  5]  10.00-11.00  sec  12.2 KBytes  99.8 Kbits/sec  0.113 ms  0/78 (0%)  
+[  5]  11.00-12.00  sec  12.2 KBytes  99.8 Kbits/sec  0.257 ms  0/78 (0%)  
+[  5]  12.00-13.00  sec  12.2 KBytes  99.8 Kbits/sec  0.380 ms  0/78 (0%)  
+[  5]  13.00-14.00  sec  12.3 KBytes   101 Kbits/sec  0.221 ms  0/79 (0%)  
+[  5]  14.00-15.00  sec  12.2 KBytes   100 Kbits/sec  0.091 ms  0/78 (0%)  
+[  5]  15.00-16.00  sec  12.2 KBytes  99.8 Kbits/sec  0.061 ms  0/78 (0%)  
+[  5]  16.00-17.00  sec  12.2 KBytes  99.8 Kbits/sec  0.270 ms  0/78 (0%)  
+[  5]  17.00-17.87  sec  10.5 KBytes  99.1 Kbits/sec  0.067 ms  0/67 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-17.87  sec   218 KBytes  99.8 Kbits/sec  0.067 ms  0/1393 (0%)  receiver

@@ -1,0 +1,31 @@
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 33408
+[  5] local 10.0.0.11 port 5061 connected to 10.0.0.1 port 53746
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  10.5 KBytes  85.8 Kbits/sec  14.922 ms  0/67 (0%)  
+[  5]   1.00-2.00   sec  9.69 KBytes  79.4 Kbits/sec  6.035 ms  264/326 (81%)  
+[  5]   2.00-3.00   sec  9.69 KBytes  79.4 Kbits/sec  0.408 ms  1112/1174 (95%)  
+[  5]   3.00-4.00   sec  9.69 KBytes  79.4 Kbits/sec  0.269 ms  1113/1175 (95%)  
+[  5]   4.00-5.00   sec  73.8 KBytes   604 Kbits/sec  1.706 ms  2387/2859 (83%)  
+[  5]   5.00-6.00   sec   196 KBytes  1.60 Mbits/sec  0.332 ms  117/1371 (8.5%)  
+[  5]   6.00-7.00   sec   183 KBytes  1.50 Mbits/sec  0.194 ms  0/1172 (0%)  
+[  5]   7.00-8.00   sec   183 KBytes  1.50 Mbits/sec  0.237 ms  0/1172 (0%)  
+[  5]   8.00-9.00   sec   181 KBytes  1.49 Mbits/sec  0.434 ms  0/1161 (0%)  
+[  5]   9.00-10.00  sec  9.69 KBytes  79.4 Kbits/sec  15.022 ms  0/62 (0%)  
+[  5]  10.00-11.00  sec  9.69 KBytes  79.4 Kbits/sec  4.679 ms  340/402 (85%)  
+[  5]  11.00-12.00  sec  9.69 KBytes  79.4 Kbits/sec  0.504 ms  1112/1174 (95%)  
+[  5]  12.00-13.00  sec  9.53 KBytes  78.1 Kbits/sec  0.262 ms  1095/1156 (95%)  
+[  5]  13.00-14.00  sec  9.69 KBytes  79.4 Kbits/sec  0.336 ms  1112/1174 (95%)  
+[  5]  14.00-15.00  sec  9.69 KBytes  79.4 Kbits/sec  0.466 ms  1112/1174 (95%)  
+[  5]  15.00-16.00  sec  9.69 KBytes  79.4 Kbits/sec  0.360 ms  1131/1193 (95%)  
+[  5]  16.00-16.66  sec  6.25 KBytes  77.5 Kbits/sec  0.474 ms  717/757 (95%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-16.7 sec  2 datagrams received out-of-order
+[  5]   0.00-16.66  sec   931 KBytes   458 Kbits/sec  0.474 ms  11612/17569 (66%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------

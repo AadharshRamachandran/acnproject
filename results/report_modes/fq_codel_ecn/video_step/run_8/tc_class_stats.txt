@@ -1,0 +1,56 @@
+tick=0 monotonic_s=193672.102124
+class htb 1:1 root leaf 20: prio 0 rate 10Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 477 bytes 6 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 6 borrowed: 0 giants: 0
+ tokens: 19125 ctokens: 19125
+
+class fq_codel 20:215 parent 20: 
+ (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  deficit 1135 count 0 lastcount 0 ldelay 1us
+
+tick=59 monotonic_s=193731.103253
+class htb 1:1 root leaf 20: prio 0 rate 10Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 65808979 bytes 49561 pkt (dropped 0, overlimits 28077 requeues 0) 
+ backlog 6056b 2p requeues 0
+ lended: 32774 borrowed: 0 giants: 0
+ tokens: -37703 ctokens: -37703
+
+class fq_codel 20:71 parent 20: 
+ (dropped 0, overlimits 0 requeues 0) 
+ backlog 6056b 2p requeues 0
+  deficit 4294965782 count 1 lastcount 1 ldelay 4.7ms
+
+tick=0 monotonic_s=201015.592743
+class htb 1:1 root leaf 20: prio 0 rate 10Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 243 bytes 3 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 3 borrowed: 0 giants: 0
+ tokens: 18712 ctokens: 18712
+
+class fq_codel 20:360 parent 20: 
+ (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  deficit 1271 count 0 lastcount 0 ldelay 1us
+
+tick=59 monotonic_s=201074.593567
+class htb 1:1 root leaf 20: prio 0 rate 10Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 66380532 bytes 52900 pkt (dropped 0, overlimits 38453 requeues 0) 
+ backlog 61500b 49p requeues 0
+ lended: 43488 borrowed: 0 giants: 0
+ tokens: -14771 ctokens: -14771
+
+class fq_codel 20:b1 parent 20: 
+ (dropped 0, overlimits 0 requeues 0) 
+ backlog 57Kb 47p requeues 0
+  deficit 4294966602 count 792 lastcount 56 ldelay 60.8ms dropping drop_next -552us
+class fq_codel 20:1e5 parent 20: 
+ (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  deficit 1416 count 0 lastcount 0 ldelay 310us
+class fq_codel 20:3e2 parent 20: 
+ (dropped 0, overlimits 0 requeues 0) 
+ backlog 3028b 1p requeues 0
+  deficit 0 count 1 lastcount 1 ldelay 9.8ms
+

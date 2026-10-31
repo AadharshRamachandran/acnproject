@@ -18,18 +18,24 @@ import pandas as pd
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from common import config as cfg
-from monitoring.analyze import build_summary, load_run, recovery_time
+from monitoring.analyze import build_summary, load_run, policy_reaction_time, recovery_time
 
-MODE_ORDER = ["none", "static", "adaptive"]
+MODE_ORDER = ["none", "static", "adaptive", "rule-polling", "rule-telemetry", "rl-polling", "rl-telemetry"]
 
 
 def collect(run_dirs):
     summaries, series = [], {}
     for rd in run_dirs:
-        meta, per_class, samples, _ = load_run(rd)
+        meta, per_class, samples, decisions = load_run(rd)
         mode = meta.get("mode", os.path.basename(rd).split("-")[-1])
         s = build_summary(meta, per_class, samples)
-        s["recovery_time_s"] = recovery_time(samples, meta.get("t_cong", 0))
+        if not decisions.empty and {"bulk_max_rate", "voip_min_rate", "video_min_rate"}.issubset(decisions.columns):
+            changes = decisions[["bulk_max_rate", "voip_min_rate", "video_min_rate"]].diff().fillna(0).ne(0).any(axis=1)
+            s["policy_changes"] = int(changes.sum())
+            s["reaction_time_s"] = policy_reaction_time(
+                samples, decisions, meta.get("t_cong_sample", meta.get("t_cong", 0)))
+        s["recovery_time_s"] = recovery_time(
+            samples, meta.get("t_cong_sample", meta.get("t_cong", 0)))
         s["run"] = os.path.basename(rd)
         summaries.append(s)
         series.setdefault(mode, []).append((samples, per_class))
@@ -41,10 +47,22 @@ def compare(run_dirs, out_dir):
     df, series = collect(run_dirs)
 
     metric_cols = [c for c in df.columns if c not in ("mode", "class", "run")]
-    agg = df.groupby(["mode", "class"])[metric_cols].mean().reset_index()
+    grouped = df.groupby(["mode", "class"])[metric_cols]
+    agg = grouped.mean().reset_index()
+    for col in metric_cols:
+        ci = grouped[col].agg(lambda x: 1.96 * x.std(ddof=1) / (len(x) ** 0.5) if len(x) > 1 else 0.0)
+        agg[col + "_ci95"] = [ci.loc[(row["mode"], row["class"])] for _, row in agg.iterrows()]
     agg["mode"] = pd.Categorical(agg["mode"], MODE_ORDER)
     agg = agg.sort_values(["class", "mode"])
     agg.to_csv(os.path.join(out_dir, "comparison.csv"), index=False)
+    with open(os.path.join(out_dir, "summary.md"), "w") as f:
+        f.write("# Experiment summary\n\nMean and 95% confidence interval (normal approximation); missing values mean no valid observation.\n\n")
+        f.write("| Mode | Class | Throughput (Mbps) | RTT (ms) | Loss (%) | Detection (s) | Reaction (s) | Policy changes | Telemetry (bytes/s) | Process CPU (%) |\n|---|---|---:|---:|---:|---:|---:|---:|---:|---:|\n")
+        for _, row in agg.iterrows():
+            def ci_text(column, digits=2):
+                value, ci = row.get(column), row.get(column + "_ci95", 0)
+                return "n/a" if pd.isna(value) else f"{value:.{digits}f} ± {ci:.{digits}f}"
+            f.write(f"| {row['mode']} | {row['class']} | {ci_text('avg_mbps_congested')} | {ci_text('avg_rtt_ms_congested')} | {ci_text('loss_pct_congested')} | {ci_text('detection_latency_s')} | {ci_text('reaction_time_s')} | {ci_text('policy_changes', 0)} | {ci_text('telemetry_bytes_per_s')} | {ci_text('telemetry_process_cpu_pct')} |\n")
     print(agg.to_string(index=False))
 
     fig, axes = plt.subplots(2, 2, figsize=(11, 8))

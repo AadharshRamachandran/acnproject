@@ -1,0 +1,4 @@
+t,mode,detector,engine,severity,old_rates,new_rates,reason,rejected,actuation_latency_s
+0.0,fq_codel_ecn,none,qdisc,0,{},{},install fq_codel_ecn stand-in qdisc,False,0.1586645819916157
+25.0005597910058,fq_codel_ecn,,,0,"{""capacity_bps"": 10000000}","{""capacity_bps"": 5000000}",scenario bottleneck capacity step,False,0.0
+38.00107190400013,fq_codel_ecn,,,0,"{""capacity_bps"": 5000000}","{""capacity_bps"": 10000000}",scenario bottleneck capacity step,False,0.0

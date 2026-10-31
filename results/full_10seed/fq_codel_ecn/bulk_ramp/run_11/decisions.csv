@@ -1,0 +1,2 @@
+t,mode,detector,engine,severity,old_rates,new_rates,reason,rejected,actuation_latency_s
+0.0,fq_codel_ecn,none,qdisc,0,{},{},install fq_codel_ecn stand-in qdisc,False,0.18379508300859015

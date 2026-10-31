@@ -48,6 +48,13 @@ CONTROLLER_PORT = 6633
 
 # Monitoring
 SAMPLE_INTERVAL_S = 1.0
+TELEMETRY_INTERVAL_S = 0.1
+TELEMETRY_REPORT_HOST = "127.0.0.1"
+TELEMETRY_REPORT_PORT = 5700
+PROBE_PORTS = {"voip": 5101, "video": 5102, "bulk": 5103}
+PROBE_RATE_HZ = 10
+TELEMETRY_STALE_S = 1.0
+SIGNAL_SOURCE = "polling"
 RESULTS_DIR = "results"
 
 # Congestion detection (Stream C). Baseline RTT is ~2x one-way delay.
@@ -62,4 +69,25 @@ ADAPTIVE = {
     "bulk_restore_step": 1_000_000, # per clear tick
     "voip_protect_min": 1_000_000,
     "video_protect_min": 5_000_000,
+}
+
+# RL action sizes are deliberately bounded by the same static/floor/protection
+# limits as the rule controller. Reward components are normalized in rl_env.py.
+RL = {
+    "reward": {
+        "video_throughput": 1.0,
+        "video_stability": 2.0,
+        "video_stability_ratio": 0.95,
+        "voip_delay": 0.8,
+        "voip_jitter": 0.4,
+        "voip_loss": 0.4,
+        "delay_violation": 1.5,
+        "bulk_starvation": 0.5,
+        "policy_change": 0.05,
+        "reservation_cost": 0.5,
+    },
+    "decision_interval_s": 0.2,
+    "seed": 7,
+    "q_learning_episodes": 500,
+    "surrogate_steps_per_episode": 120,
 }

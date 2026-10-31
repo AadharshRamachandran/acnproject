@@ -1,0 +1,31 @@
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 49236
+[  5] local 10.0.0.11 port 5061 connected to 10.0.0.1 port 45066
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  10.5 KBytes  85.8 Kbits/sec  14.929 ms  0/67 (0%)  
+[  5]   1.00-2.00   sec  9.69 KBytes  79.4 Kbits/sec  6.078 ms  264/326 (81%)  
+[  5]   2.00-3.00   sec  9.69 KBytes  79.4 Kbits/sec  0.410 ms  1112/1174 (95%)  
+[  5]   3.00-4.00   sec  9.69 KBytes  79.4 Kbits/sec  0.294 ms  1113/1175 (95%)  
+[  5]   4.00-5.00   sec  9.53 KBytes  78.1 Kbits/sec  0.295 ms  1094/1155 (95%)  
+[  5]   5.00-6.00   sec  9.69 KBytes  79.4 Kbits/sec  0.293 ms  1112/1174 (95%)  
+[  5]   6.00-7.00   sec  9.69 KBytes  79.4 Kbits/sec  0.437 ms  1111/1173 (95%)  
+[  5]   7.00-8.00   sec  9.69 KBytes  79.4 Kbits/sec  0.354 ms  1132/1194 (95%)  
+[  5]   8.00-9.00   sec  36.2 KBytes   297 Kbits/sec  1.348 ms  2688/2920 (92%)  
+[  5]   9.00-10.00  sec   133 KBytes  1.09 Mbits/sec  1.261 ms  323/1172 (28%)  
+[  5]  10.00-11.00  sec   126 KBytes  1.03 Mbits/sec  3.296 ms  307/1112 (28%)  
+[  5]  11.00-12.00  sec  9.69 KBytes  79.4 Kbits/sec  14.721 ms  24/86 (28%)  
+[  5]  12.00-13.00  sec  9.69 KBytes  79.4 Kbits/sec  2.826 ms  509/571 (89%)  
+[  5]  13.00-14.00  sec  9.53 KBytes  78.1 Kbits/sec  0.336 ms  1113/1174 (95%)  
+[  5]  14.00-15.00  sec  9.69 KBytes  79.4 Kbits/sec  0.554 ms  1092/1154 (95%)  
+[  5]  15.00-16.00  sec  9.69 KBytes  79.4 Kbits/sec  0.281 ms  1113/1175 (95%)  
+[  5]  16.00-16.66  sec  6.25 KBytes  77.6 Kbits/sec  0.432 ms  717/757 (95%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-16.7 sec  3 datagrams received out-of-order
+[  5]   0.00-16.66  sec   427 KBytes   210 Kbits/sec  0.432 ms  14824/17559 (84%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------

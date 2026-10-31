@@ -1,0 +1,64 @@
+﻿docker :  Container acnprojectendsem-testbed-run-b4ae00264c3a Creating 
+At line:1 char:302
++ ... tch {} } }; docker compose run --rm -T testbed python3 run_experiment ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Container acnp...64c3a Creating :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Container acnprojectendsem-testbed-run-b4ae00264c3a Created 
+Environment checks passed (Linux, OVS, Mininet, iperf3, tc, Python modules).
+[1/100] skipping valid none/standard/run_7
+[2/100] skipping valid none/standard/run_8
+[3/100] skipping valid none/standard/run_9
+[4/100] skipping valid none/standard/run_10
+[5/100] skipping valid none/standard/run_11
+[6/100] skipping valid none/flash_crowd/run_7
+[7/100] skipping valid none/flash_crowd/run_8
+[8/100] skipping valid none/flash_crowd/run_9
+[9/100] skipping valid none/flash_crowd/run_10
+[10/100] skipping valid none/flash_crowd/run_11
+[11/100] skipping valid none/voip_surge/run_7
+[12/100] skipping valid none/voip_surge/run_8
+[13/100] skipping valid none/voip_surge/run_9
+[14/100] skipping valid none/voip_surge/run_10
+[15/100] skipping valid none/voip_surge/run_11
+[16/100] skipping valid none/video_step/run_7
+[17/100] skipping valid none/video_step/run_8
+[18/100] skipping valid none/video_step/run_9
+[19/100] mode=none scenario=video_step seed=10
+*** Error setting resource limits. Mininet's performance may be affected.
+2026-10-28 16:25:26,235 WARNING *** Error setting resource limits. Mininet's performance may be affected.
+
+  saved /app/results/report_modes/none/video_step/run_10
+[20/100] mode=none scenario=video_step seed=11
+  saved /app/results/report_modes/none/video_step/run_11
+[21/100] skipping valid static/standard/run_7
+[22/100] skipping valid static/standard/run_8
+[23/100] skipping valid static/standard/run_9
+[24/100] skipping valid static/standard/run_10
+[25/100] skipping valid static/standard/run_11
+[26/100] skipping valid static/flash_crowd/run_7
+[27/100] skipping valid static/flash_crowd/run_8
+[28/100] skipping valid static/flash_crowd/run_9
+[29/100] skipping valid static/flash_crowd/run_10
+[30/100] skipping valid static/flash_crowd/run_11
+[31/100] skipping valid static/voip_surge/run_7
+[32/100] skipping valid static/voip_surge/run_8
+[33/100] skipping valid static/voip_surge/run_9
+[34/100] skipping valid static/voip_surge/run_10
+[35/100] skipping valid static/voip_surge/run_11
+[36/100] mode=static scenario=video_step seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:27:51,147 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/video_step/run_7
+[37/100] mode=static scenario=video_step seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:29:07,666 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/video_step/run_8
+[38/100] mode=static scenario=video_step seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:30:24,009 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+

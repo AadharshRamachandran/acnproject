@@ -1,0 +1,3 @@
+t,mode,detector,engine,severity,old_rates,new_rates,reason,rejected,actuation_latency_s
+25.000842711000587,none,,,0,"{""capacity_bps"": 10000000}","{""capacity_bps"": 5000000}",scenario bottleneck capacity step,False,0.0
+38.00113562399929,none,,,0,"{""capacity_bps"": 5000000}","{""capacity_bps"": 10000000}",scenario bottleneck capacity step,False,0.0

@@ -1,0 +1,31 @@
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 44810
+[  5] local 10.0.0.11 port 5061 connected to 10.0.0.1 port 47379
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  10.5 KBytes  85.8 Kbits/sec  14.922 ms  0/67 (0%)  
+[  5]   1.00-2.00   sec  9.69 KBytes  79.4 Kbits/sec  6.057 ms  264/326 (81%)  
+[  5]   2.00-3.00   sec  9.69 KBytes  79.4 Kbits/sec  0.506 ms  1112/1174 (95%)  
+[  5]   3.00-4.00   sec  9.69 KBytes  79.4 Kbits/sec  0.736 ms  1113/1175 (95%)  
+[  5]   4.00-5.00   sec  68.6 KBytes   562 Kbits/sec  2.978 ms  2372/2811 (84%)  
+[  5]   5.00-6.00   sec   191 KBytes  1.57 Mbits/sec  1.844 ms  161/1386 (12%)  
+[  5]   6.00-7.00   sec   188 KBytes  1.54 Mbits/sec  0.666 ms  0/1204 (0%)  
+[  5]   7.00-8.00   sec   123 KBytes  1.01 Mbits/sec  1.388 ms  243/1029 (24%)  
+[  5]   8.00-9.00   sec  34.5 KBytes   283 Kbits/sec  5.205 ms  282/503 (56%)  
+[  5]   9.00-10.00  sec  13.6 KBytes   111 Kbits/sec  8.628 ms  630/717 (88%)  
+[  5]  10.00-11.00  sec  9.69 KBytes  79.4 Kbits/sec  6.605 ms  487/549 (89%)  
+[  5]  11.00-12.00  sec  9.69 KBytes  79.4 Kbits/sec  0.441 ms  1111/1173 (95%)  
+[  5]  12.00-13.00  sec  9.53 KBytes  78.1 Kbits/sec  0.316 ms  1096/1157 (95%)  
+[  5]  13.00-14.00  sec  9.69 KBytes  79.4 Kbits/sec  0.664 ms  1112/1174 (95%)  
+[  5]  14.00-15.00  sec  9.69 KBytes  79.4 Kbits/sec  0.363 ms  1112/1174 (95%)  
+[  5]  15.00-16.00  sec  9.69 KBytes  79.4 Kbits/sec  0.600 ms  1111/1173 (95%)  
+[  5]  16.00-16.69  sec  6.41 KBytes  75.8 Kbits/sec  0.406 ms  736/777 (95%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-16.7 sec  1 datagrams received out-of-order
+[  5]   0.00-16.69  sec   723 KBytes   355 Kbits/sec  0.406 ms  12942/17569 (74%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------

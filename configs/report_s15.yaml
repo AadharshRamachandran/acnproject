@@ -1,0 +1,4 @@
+# Budget-share sensitivity: report setup with s = 0.15.
+base: report.yaml
+fiveqi:
+  link_share: 0.15

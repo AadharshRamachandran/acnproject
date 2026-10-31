@@ -1,0 +1,123 @@
+{
+  "samples": 45,
+  "bulk_starvation_s": 1.0,
+  "detection_latency_s": 0.0,
+  "time_to_act_s": -9.999981007997121,
+  "time_to_recover_s": 5.101967658003559,
+  "false_alarm_events": [
+    {
+      "t": 6.0,
+      "qos_cost": 1.0,
+      "voip_rtt_ms": 10.2,
+      "bulk_mbps": 0.0
+    },
+    {
+      "t": 21.0,
+      "qos_cost": 0.0,
+      "voip_rtt_ms": 10.1,
+      "bulk_mbps": 2.68227907170919
+    },
+    {
+      "t": 22.0,
+      "qos_cost": 0.0,
+      "voip_rtt_ms": 10.2,
+      "bulk_mbps": 1.3292668121979703
+    },
+    {
+      "t": 34.0,
+      "qos_cost": 0.0,
+      "voip_rtt_ms": 0.0,
+      "bulk_mbps": 2.6525832572167816
+    },
+    {
+      "t": 35.0,
+      "qos_cost": 0.0,
+      "voip_rtt_ms": 0.0,
+      "bulk_mbps": 1.3291438053197333
+    }
+  ],
+  "false_alarm_qos_cost_mean": 0.2,
+  "forecast_prediction_lead_s": 0.0,
+  "forecast_mae": 0.26971184721669655,
+  "policy_changes": 15,
+  "decisions_logged": 39,
+  "rejection_rate": 0.6153846153846154,
+  "queue_stats_samples": 45,
+  "queue_stats_coverage": 1.0,
+  "queue_counter_totals_bytes": {
+    "voip": 692739.0,
+    "video": 22703355.0,
+    "bulk": 16403618.0
+  },
+  "queue_counters_valid": true,
+  "queue_video_rate_mbps_mean": 4.036664364353858,
+  "iperf_metrics": {
+    "voip": {
+      "valid": true,
+      "throughput_mbps": 0.10002540487656836,
+      "seconds": 44.865402,
+      "bytes": 560960,
+      "loss_pct": 0.0,
+      "source": "iperf3-server-json",
+      "record": "sum"
+    },
+    "video": {
+      "valid": true,
+      "throughput_mbps": 4.000054362126175,
+      "seconds": 44.88419,
+      "bytes": 22442400,
+      "loss_pct": 0.0,
+      "source": "iperf3-server-json",
+      "record": "sum"
+    },
+    "bulk": {
+      "valid": true,
+      "throughput_mbps": 4.898957305247875,
+      "seconds": 29.876529,
+      "bytes": 18295480,
+      "loss_pct": null,
+      "source": "iperf3-server-json-sender"
+    }
+  },
+  "link_capacity_mbps": 10.0,
+  "bulk_throughput_within_capacity": true,
+  "throughput_valid": true,
+  "queue_video_rate_iperf_ratio": 1.0091523761712637,
+  "queue_video_rate_matches_iperf": true,
+  "telemetry_valid": true,
+  "voip_rtt_mean_ms": 6.036363636363634,
+  "voip_rtt_p95_ms": 10.3,
+  "voip_rtt_p99_ms": 10.4,
+  "voip_loss_pct_mean": 0.0,
+  "voip_throughput_mbps_mean": 0.10002540487656836,
+  "voip_throughput_source": "iperf3-server-json",
+  "voip_iperf_loss_pct": 0.0,
+  "voip_jitter_ms_mean": 0.2720930232558141,
+  "video_rtt_mean_ms": 10.866666666666665,
+  "video_rtt_p95_ms": 10.3,
+  "video_rtt_p99_ms": 10.3,
+  "video_loss_pct_mean": 0.0,
+  "video_throughput_mbps_mean": 4.000054362126175,
+  "video_throughput_source": "iperf3-server-json",
+  "video_iperf_loss_pct": 0.0,
+  "video_jitter_ms_mean": 0.7613636363636371,
+  "bulk_rtt_mean_ms": 10.199999999999992,
+  "bulk_rtt_p95_ms": 10.2,
+  "bulk_rtt_p99_ms": 10.2,
+  "bulk_loss_pct_mean": 0.0,
+  "bulk_throughput_mbps_mean": 4.898957305247875,
+  "bulk_throughput_source": "iperf3-server-json-sender",
+  "bulk_iperf_loss_pct": null,
+  "bulk_jitter_ms_mean": 0.0,
+  "voip_sla_violation_ratio": 0.0,
+  "video_sla_violation_ratio": 0.022222222222222223,
+  "detector_false_positive_rate": 0.25,
+  "detector_missed_detection_rate": 0.0,
+  "gt_violation_fraction": 0.0,
+  "jain_index_mean": 0.6722828060990071,
+  "controller_cpu_s_per_tick": 0.0554106687999984,
+  "actuation_latency_mean_s": 0.3302151898975493,
+  "voip_mos_estimate": 4.406463978454052,
+  "video_stability_fraction": 0.9777777777777777,
+  "video_throughput_cv": 0.15200371543074565
+}

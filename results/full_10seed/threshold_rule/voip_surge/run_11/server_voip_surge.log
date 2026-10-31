@@ -1,0 +1,29 @@
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 41270
+[  5] local 10.0.0.11 port 5061 connected to 10.0.0.1 port 36961
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  10.5 KBytes  85.7 Kbits/sec  14.925 ms  0/67 (0%)  
+[  5]   1.00-2.00   sec  9.69 KBytes  79.4 Kbits/sec  6.116 ms  264/326 (81%)  
+[  5]   2.00-3.00   sec  9.69 KBytes  79.4 Kbits/sec  0.396 ms  1112/1174 (95%)  
+[  5]   3.00-4.00   sec  9.53 KBytes  78.1 Kbits/sec  0.287 ms  1113/1174 (95%)  
+[  5]   4.00-5.00   sec  75.2 KBytes   616 Kbits/sec  1.937 ms  2359/2840 (83%)  
+[  5]   5.00-6.00   sec   197 KBytes  1.61 Mbits/sec  0.393 ms  132/1392 (9.5%)  
+[  5]   6.00-7.00   sec   183 KBytes  1.50 Mbits/sec  0.094 ms  0/1171 (0%)  
+[  5]   7.00-8.00   sec   183 KBytes  1.50 Mbits/sec  0.109 ms  0/1172 (0%)  
+[  5]   8.00-9.00   sec   183 KBytes  1.50 Mbits/sec  0.195 ms  0/1173 (0%)  
+[  5]   9.00-10.00  sec   183 KBytes  1.50 Mbits/sec  0.245 ms  0/1172 (0%)  
+[  5]  10.00-11.00  sec  11.6 KBytes  94.7 Kbits/sec  15.357 ms  0/74 (0%)  
+[  5]  11.00-12.00  sec  9.69 KBytes  79.4 Kbits/sec  5.477 ms  322/384 (84%)  
+[  5]  12.00-13.00  sec  9.53 KBytes  78.1 Kbits/sec  0.667 ms  1104/1165 (95%)  
+[  5]  13.00-14.00  sec  9.69 KBytes  79.4 Kbits/sec  0.308 ms  1112/1174 (95%)  
+[  5]  14.00-15.00  sec  73.6 KBytes   603 Kbits/sec  2.052 ms  2398/2869 (84%)  
+[  5]  15.00-15.07  sec  20.9 KBytes  2.54 Mbits/sec  0.906 ms  117/251 (47%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-15.07  sec  1.15 MBytes   641 Kbits/sec  0.906 ms  10033/17578 (57%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------

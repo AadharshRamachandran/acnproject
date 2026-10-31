@@ -1,0 +1,16 @@
+tick=0 monotonic_s=27932.738412
+class htb 5:1 root leaf 10: prio 0 rate 10Mbit ceil 10Mbit burst 15Kb cburst 1600b 
+ Sent 530 bytes 7 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 74b 1p requeues 0
+ lended: 7 borrowed: 0 giants: 0
+ tokens: 190775 ctokens: 18775
+
+
+tick=44 monotonic_s=27976.738971
+class htb 5:1 root leaf 10: prio 0 rate 10Mbit ceil 10Mbit burst 15Kb cburst 1600b 
+ Sent 44039758 bytes 35328 pkt (dropped 309, overlimits 21786 requeues 0) 
+ backlog 158Kb 98p requeues 0
+ lended: 29285 borrowed: 0 giants: 0
+ tokens: 134646 ctokens: -37354
+
+

@@ -1,0 +1,151 @@
+{
+  "samples": 45,
+  "bulk_starvation_s": 10.0,
+  "detection_latency_s": 0.0,
+  "time_to_act_s": -14.999391486000604,
+  "time_to_recover_s": 1.0004344399985712,
+  "false_alarm_events": [
+    {
+      "t": 2.0,
+      "qos_cost": 1.0,
+      "voip_rtt_ms": 10.149999999999999,
+      "bulk_mbps": 0.0
+    },
+    {
+      "t": 16.0,
+      "qos_cost": 0.0,
+      "voip_rtt_ms": 10.1,
+      "bulk_mbps": 4.3719005632457355
+    },
+    {
+      "t": 18.0,
+      "qos_cost": 0.0,
+      "voip_rtt_ms": 10.1,
+      "bulk_mbps": 2.6271565237074985
+    },
+    {
+      "t": 19.0,
+      "qos_cost": 0.0,
+      "voip_rtt_ms": 10.2,
+      "bulk_mbps": 2.4828034219994946
+    }
+  ],
+  "false_alarm_qos_cost_mean": 0.25,
+  "forecast_prediction_lead_s": null,
+  "prediction_lead_s": 4.999467423000169,
+  "forecast_mae": 14.336275317505446,
+  "5qi_link_share": 0.1,
+  "5qi_pdb_ms": {
+    "voip": 100,
+    "video": 150,
+    "bulk": 300
+  },
+  "class_delay_budget_one_way_ms": {
+    "voip": 10.0,
+    "video": 15.0,
+    "bulk": 30.0
+  },
+  "class_delay_budget_rtt_ms": {
+    "voip": 20.0,
+    "video": 30.0,
+    "bulk": 60.0
+  },
+  "sla_warmup_seconds": 10.0,
+  "policy_changes": 8,
+  "decisions_logged": 22,
+  "rejection_rate": 0.6363636363636364,
+  "forecast_prediction_lead_by_class_s": {},
+  "queue_stats_samples": 45,
+  "queue_stats_coverage": 1.0,
+  "queue_counter_totals_bytes": {
+    "voip": 692941.0,
+    "video": 22695829.0,
+    "bulk": 5224316.0
+  },
+  "queue_counters_valid": true,
+  "queue_video_rate_mbps_mean": 4.0347894674061,
+  "iperf_metrics": {
+    "voip": {
+      "valid": true,
+      "throughput_mbps": 0.10002422528552948,
+      "seconds": 44.878728,
+      "bytes": 561120,
+      "loss_pct": 0.0,
+      "source": "iperf3-server-json",
+      "record": "sum"
+    },
+    "video": {
+      "valid": true,
+      "throughput_mbps": 3.9999589934313717,
+      "seconds": 44.87086,
+      "bytes": 22435200,
+      "loss_pct": 0.0,
+      "source": "iperf3-server-json",
+      "record": "sum"
+    },
+    "bulk": {
+      "valid": true,
+      "throughput_mbps": 1.8457038265952088,
+      "seconds": 29.887248,
+      "bytes": 6895376,
+      "loss_pct": null,
+      "source": "iperf3-server-json-sender"
+    }
+  },
+  "link_capacity_mbps": 10.0,
+  "bulk_throughput_within_capacity": true,
+  "throughput_valid": true,
+  "queue_video_rate_iperf_ratio": 1.008707707761986,
+  "queue_video_rate_matches_iperf": true,
+  "telemetry_valid": true,
+  "delay_mean_ms_voip": 9.762707247985187,
+  "delay_sla_violation_ratio_voip": 0.37142857142857144,
+  "rtt_sla_violation_ratio_voip": 0.0,
+  "voip_rtt_mean_ms": 10.172727272727267,
+  "voip_rtt_p95_ms": 10.2,
+  "voip_rtt_p99_ms": 10.3,
+  "voip_loss_pct_mean": 0.0,
+  "voip_throughput_mbps_mean": 0.10002422528552948,
+  "voip_throughput_source": "iperf3-server-json",
+  "voip_iperf_loss_pct": 0.0,
+  "voip_jitter_ms_mean": 0.04186046511627908,
+  "delay_mean_ms_video": 10.074935591041807,
+  "delay_sla_violation_ratio_video": 0.0,
+  "rtt_sla_violation_ratio_video": 0.0,
+  "video_rtt_mean_ms": 10.17272727272727,
+  "video_rtt_p95_ms": 10.2,
+  "video_rtt_p99_ms": 10.3,
+  "video_loss_pct_mean": 0.0,
+  "video_throughput_mbps_mean": 3.9999589934313717,
+  "video_throughput_source": "iperf3-server-json",
+  "video_iperf_loss_pct": 0.0,
+  "video_jitter_ms_mean": 0.05116279069767436,
+  "delay_mean_ms_bulk": 1111.7166607096774,
+  "delay_sla_violation_ratio_bulk": 0.8285714285714286,
+  "rtt_sla_violation_ratio_bulk": 0.0,
+  "bulk_rtt_mean_ms": 10.422727272727268,
+  "bulk_rtt_p95_ms": 10.4,
+  "bulk_rtt_p99_ms": 15.3,
+  "bulk_loss_pct_mean": 0.0,
+  "bulk_throughput_mbps_mean": 1.8457038265952088,
+  "bulk_throughput_source": "iperf3-server-json-sender",
+  "bulk_iperf_loss_pct": null,
+  "bulk_jitter_ms_mean": 0.3232558139534884,
+  "voip_sla_violation_ratio": 0.0,
+  "video_sla_violation_ratio": 0.044444444444444446,
+  "detector_false_positive_rate": 0.7727272727272727,
+  "detector_missed_detection_rate": 0.0,
+  "gt_violation_fraction": 0.0,
+  "sla_violation_ratio_after_warmup": 0.8571428571428571,
+  "jain_index_mean": 0.8340363649038985,
+  "controller_cpu_s_per_tick": 0.013821132666668253,
+  "reserved_rate_mbps_mean": 6.633333333333334,
+  "reservation_cost_fraction_mean": 0.663333333333333,
+  "actuation_cost_fraction": 1.0,
+  "compute_cost_fraction": 0.013821132666668253,
+  "operating_cost_index": 0.6657154465999998,
+  "actuation_latency_mean_s": 0.01887667736363338,
+  "voip_mos_estimate": 4.404510109088743,
+  "video_stability_fraction": 0.9555555555555556,
+  "video_throughput_cv": 0.1524198641890429
+}

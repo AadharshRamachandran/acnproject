@@ -1,0 +1,40 @@
+-----------------------------------------------------------
+Server listening on 5004
+-----------------------------------------------------------
+Accepted connection from 10.0.0.2, port 49990
+[  5] local 10.0.0.12 port 5004 connected to 10.0.0.2 port 58530
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec   452 KBytes  3.70 Mbits/sec  0.223 ms  0/386 (0%)  
+[  5]   1.00-2.00   sec   488 KBytes  3.99 Mbits/sec  0.073 ms  0/416 (0%)  
+[  5]   2.00-3.00   sec   489 KBytes  4.00 Mbits/sec  0.101 ms  0/417 (0%)  
+[  5]   3.00-4.00   sec   489 KBytes  4.00 Mbits/sec  0.120 ms  0/417 (0%)  
+[  5]   4.00-5.00   sec   488 KBytes  3.99 Mbits/sec  0.067 ms  0/416 (0%)  
+[  5]   5.00-6.00   sec   489 KBytes  4.00 Mbits/sec  0.044 ms  0/417 (0%)  
+[  5]   6.00-7.00   sec   489 KBytes  4.00 Mbits/sec  0.048 ms  0/417 (0%)  
+[  5]   7.00-8.00   sec   488 KBytes  3.99 Mbits/sec  0.045 ms  0/416 (0%)  
+[  5]   8.00-9.00   sec   489 KBytes  4.00 Mbits/sec  0.328 ms  0/417 (0%)  
+[  5]   9.00-10.00  sec   489 KBytes  4.00 Mbits/sec  0.082 ms  0/417 (0%)  
+[  5]  10.00-11.00  sec   434 KBytes  3.55 Mbits/sec  1.222 ms  0/370 (0%)  
+[  5]  11.00-12.00  sec   496 KBytes  4.06 Mbits/sec  0.674 ms  8/431 (1.9%)  
+[  5]  12.00-13.00  sec   488 KBytes  3.99 Mbits/sec  1.166 ms  0/416 (0%)  
+[  5]  13.00-14.00  sec   483 KBytes  3.96 Mbits/sec  1.139 ms  0/412 (0%)  
+[  5]  14.00-15.00  sec   483 KBytes  3.95 Mbits/sec  1.189 ms  0/412 (0%)  
+[  5]  15.00-16.00  sec   484 KBytes  3.96 Mbits/sec  0.974 ms  0/413 (0%)  
+[  5]  16.00-17.00  sec   485 KBytes  3.97 Mbits/sec  1.183 ms  0/414 (0%)  
+[  5]  17.00-18.00  sec   483 KBytes  3.96 Mbits/sec  1.028 ms  0/412 (0%)  
+[  5]  18.00-19.00  sec   499 KBytes  4.09 Mbits/sec  1.136 ms  2/428 (0.47%)  
+[  5]  19.00-20.00  sec   477 KBytes  3.91 Mbits/sec  0.978 ms  0/407 (0%)  
+[  5]  20.00-21.00  sec   486 KBytes  3.98 Mbits/sec  1.180 ms  0/415 (0%)  
+[  5]  21.00-22.00  sec   485 KBytes  3.97 Mbits/sec  1.278 ms  4/418 (0.96%)  
+[  5]  22.00-23.00  sec   503 KBytes  4.12 Mbits/sec  1.208 ms  0/429 (0%)  
+[  5]  23.00-24.01  sec   482 KBytes  3.92 Mbits/sec  1.543 ms  0/411 (0%)  
+[  5]  24.01-25.00  sec   479 KBytes  3.96 Mbits/sec  1.141 ms  0/409 (0%)  
+[  5]  25.00-25.20  sec  97.3 KBytes  3.97 Mbits/sec  1.224 ms  1/84 (1.2%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-25.2 sec  2 datagrams received out-of-order
+[  5]   0.00-25.20  sec  11.9 MBytes  3.96 Mbits/sec  1.224 ms  15/10417 (0.14%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5004
+-----------------------------------------------------------

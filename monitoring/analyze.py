@@ -69,9 +69,31 @@ def recovery_time(samples, t_cong):
     return None
 
 
+def congestion_flag_time(samples, t_cong):
+    """First recorded sample meeting the configured utilization/VoIP RTT rule."""
+    during = samples[samples["t"] >= t_cong]
+    flagged = during[((during["total_mbps"] / cfg.BOTTLENECK_BW_MBPS) > cfg.CONGESTION_UTIL_THRESHOLD)
+                     | (during["voip_rtt_ms"] > cfg.CONGESTION_RTT_MS)]
+    return None if flagged.empty else float(flagged.iloc[0]["t"])
+
+
+def policy_reaction_time(samples, decisions, t_cong):
+    """Elapsed time from first congestion flag to the first applied rate change."""
+    detected = congestion_flag_time(samples, t_cong)
+    cols = ["bulk_max_rate", "voip_min_rate", "video_min_rate"]
+    if detected is None or decisions.empty or not set(cols).issubset(decisions.columns):
+        return None
+    changed = decisions[decisions[cols].diff().fillna(0).ne(0).any(axis=1)
+                         & (decisions["t"] >= detected)]
+    return None if changed.empty else max(0.0, float(changed.iloc[0]["t"]) - detected)
+
+
 def build_summary(meta, per_class, samples):
     t_cong = meta.get("t_cong", 0)
-    during = samples[samples["t"] >= t_cong]
+    sample_t_cong = meta.get("t_cong_sample", t_cong)
+    during = samples[samples["t"] >= sample_t_cong]
+    flagged_time = congestion_flag_time(samples, sample_t_cong)
+    detection = max(0.0, flagged_time - sample_t_cong) if flagged_time is not None else None
     rows = []
     for c, df in per_class.items():
         if df.empty:
@@ -88,6 +110,7 @@ def build_summary(meta, per_class, samples):
             "avg_rtt_ms": samples[f"{c}_rtt_ms"].mean(),
             "avg_rtt_ms_congested": during[f"{c}_rtt_ms"].mean(),
             "max_rtt_ms": samples[f"{c}_rtt_ms"].max(),
+            "detection_latency_s": detection,
         })
     return pd.DataFrame(rows)
 
@@ -123,7 +146,13 @@ def plot_run(run_dir, meta, per_class, samples, decisions):
         if t_cong is not None:
             ax.axvline(t_cong, c="red", ls="--", lw=1, label="bulk starts")
         if not decisions.empty:
-            for t in decisions.loc[decisions["action"] != "hold", "t"]:
+            rate_cols = ["bulk_max_rate", "voip_min_rate", "video_min_rate"]
+            if set(rate_cols).issubset(decisions.columns):
+                changed = decisions[rate_cols].diff().fillna(0).ne(0).any(axis=1)
+                change_times = decisions.loc[changed, "t"]
+            else:
+                change_times = decisions.loc[decisions["action"] != "hold", "t"]
+            for t in change_times:
                 ax.axvline(t, c="green", ls="-", lw=0.6, alpha=0.4)
         ax.legend(loc="upper right", fontsize=8)
 
@@ -137,9 +166,24 @@ def analyze(run_dir):
     meta, per_class, samples, decisions = load_run(run_dir)
     summary = build_summary(meta, per_class, samples)
     if "t_cong" in meta:
-        summary["recovery_time_s"] = recovery_time(samples, meta["t_cong"])
+        summary["recovery_time_s"] = recovery_time(
+            samples, meta.get("t_cong_sample", meta["t_cong"]))
     if not decisions.empty:
-        summary["policy_changes"] = int((decisions["action"] != "hold").sum())
+        if {"bulk_max_rate", "voip_min_rate", "video_min_rate"}.issubset(decisions.columns):
+            summary["policy_changes"] = int(decisions[["bulk_max_rate", "voip_min_rate", "video_min_rate"]].diff().fillna(0).ne(0).any(axis=1).sum())
+            if "controller" in decisions.columns:
+                effective = decisions[decisions["controller"] != "rule-fallback"]
+            else:
+                effective = decisions
+            summary["reaction_time_s"] = policy_reaction_time(
+                samples, effective, meta.get("t_cong_sample", meta.get("t_cong", 0)))
+        else:
+            summary["policy_changes"] = int((decisions["action"] != "hold").sum())
+    over = os.path.join(run_dir, "telemetry_overhead.csv")
+    if os.path.exists(over):
+        overhead = pd.read_csv(over)
+        summary["telemetry_bytes_per_s"] = overhead["bytes_per_s"].mean()
+        summary["telemetry_process_cpu_pct"] = overhead["process_cpu_pct"].mean()
     summary.to_csv(os.path.join(run_dir, "summary.csv"), index=False)
     plot_run(run_dir, meta, per_class, samples, decisions)
     print(summary.to_string(index=False))

@@ -1,0 +1,393 @@
+﻿docker :  Container acnprojectendsem-testbed-run-30b0a51e3d8e Creating 
+At line:1 char:374
++ ... irm:$false; docker compose run --rm -T testbed python3 run_experiment ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Container acnp...e3d8e Creating :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Container acnprojectendsem-testbed-run-30b0a51e3d8e Created 
+Environment checks passed (Linux, OVS, Mininet, iperf3, tc, Python modules).
+[1/100] mode=none scenario=standard seed=7
+*** Error setting resource limits. Mininet's performance may be affected.
+2026-10-28 14:12:59,178 WARNING *** Error setting resource limits. Mininet's performance may be affected.
+
+  saved /app/results/report_modes/none/standard/run_7
+[2/100] mode=none scenario=standard seed=8
+  saved /app/results/report_modes/none/standard/run_8
+[3/100] mode=none scenario=standard seed=9
+  saved /app/results/report_modes/none/standard/run_9
+[4/100] mode=none scenario=standard seed=10
+  saved /app/results/report_modes/none/standard/run_10
+[5/100] mode=none scenario=standard seed=11
+  saved /app/results/report_modes/none/standard/run_11
+[6/100] mode=none scenario=flash_crowd seed=7
+  saved /app/results/report_modes/none/flash_crowd/run_7
+[7/100] mode=none scenario=flash_crowd seed=8
+  saved /app/results/report_modes/none/flash_crowd/run_8
+[8/100] mode=none scenario=flash_crowd seed=9
+  saved /app/results/report_modes/none/flash_crowd/run_9
+[9/100] mode=none scenario=flash_crowd seed=10
+  saved /app/results/report_modes/none/flash_crowd/run_10
+[10/100] mode=none scenario=flash_crowd seed=11
+  saved /app/results/report_modes/none/flash_crowd/run_11
+[11/100] mode=none scenario=voip_surge seed=7
+  saved /app/results/report_modes/none/voip_surge/run_7
+[12/100] mode=none scenario=voip_surge seed=8
+  saved /app/results/report_modes/none/voip_surge/run_8
+[13/100] mode=none scenario=voip_surge seed=9
+  saved /app/results/report_modes/none/voip_surge/run_9
+[14/100] mode=none scenario=voip_surge seed=10
+  saved /app/results/report_modes/none/voip_surge/run_10
+[15/100] mode=none scenario=voip_surge seed=11
+  saved /app/results/report_modes/none/voip_surge/run_11
+[16/100] mode=none scenario=video_step seed=7
+  saved /app/results/report_modes/none/video_step/run_7
+[17/100] mode=none scenario=video_step seed=8
+  saved /app/results/report_modes/none/video_step/run_8
+[18/100] mode=none scenario=video_step seed=9
+  saved /app/results/report_modes/none/video_step/run_9
+[19/100] mode=none scenario=video_step seed=10
+  saved /app/results/report_modes/none/video_step/run_10
+[20/100] mode=none scenario=video_step seed=11
+  saved /app/results/report_modes/none/video_step/run_11
+[21/100] mode=static scenario=standard seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:33:56,010 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/standard/run_7
+[22/100] mode=static scenario=standard seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:34:56,898 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/standard/run_8
+[23/100] mode=static scenario=standard seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:35:58,196 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/standard/run_9
+[24/100] mode=static scenario=standard seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:36:58,949 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/standard/run_10
+[25/100] mode=static scenario=standard seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:37:59,452 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/standard/run_11
+[26/100] mode=static scenario=flash_crowd seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:38:59,780 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/flash_crowd/run_7
+[27/100] mode=static scenario=flash_crowd seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:40:00,178 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/flash_crowd/run_8
+[28/100] mode=static scenario=flash_crowd seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:41:00,820 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/flash_crowd/run_9
+[29/100] mode=static scenario=flash_crowd seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:42:01,859 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/flash_crowd/run_10
+[30/100] mode=static scenario=flash_crowd seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:43:03,127 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/flash_crowd/run_11
+[31/100] mode=static scenario=voip_surge seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:44:04,565 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/voip_surge/run_7
+[32/100] mode=static scenario=voip_surge seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:45:20,876 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/voip_surge/run_8
+[33/100] mode=static scenario=voip_surge seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:46:36,842 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/voip_surge/run_9
+[34/100] mode=static scenario=voip_surge seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:47:53,718 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/voip_surge/run_10
+[35/100] mode=static scenario=voip_surge seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:49:09,676 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/voip_surge/run_11
+[36/100] mode=static scenario=video_step seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:50:25,395 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/video_step/run_7
+[37/100] mode=static scenario=video_step seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:51:41,119 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/video_step/run_8
+[38/100] mode=static scenario=video_step seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:52:57,005 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/video_step/run_9
+[39/100] mode=static scenario=video_step seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:54:13,425 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/video_step/run_10
+[40/100] mode=static scenario=video_step seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:55:29,317 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/static/video_step/run_11
+[41/100] mode=reactive scenario=standard seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:56:45,207 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/standard/run_7
+[42/100] mode=reactive scenario=standard seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:57:45,901 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/standard/run_8
+[43/100] mode=reactive scenario=standard seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:58:46,856 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/standard/run_9
+[44/100] mode=reactive scenario=standard seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 14:59:48,314 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/standard/run_10
+[45/100] mode=reactive scenario=standard seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:00:49,686 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/standard/run_11
+[46/100] mode=reactive scenario=flash_crowd seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:01:50,590 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/flash_crowd/run_7
+[47/100] mode=reactive scenario=flash_crowd seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:02:51,704 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/flash_crowd/run_8
+[48/100] mode=reactive scenario=flash_crowd seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:03:52,765 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/flash_crowd/run_9
+[49/100] mode=reactive scenario=flash_crowd seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:04:53,786 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/flash_crowd/run_10
+[50/100] mode=reactive scenario=flash_crowd seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:05:55,121 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/flash_crowd/run_11
+[51/100] mode=reactive scenario=voip_surge seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:06:56,497 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/voip_surge/run_7
+[52/100] mode=reactive scenario=voip_surge seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:08:12,790 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/voip_surge/run_8
+[53/100] mode=reactive scenario=voip_surge seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:09:29,191 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/voip_surge/run_9
+[54/100] mode=reactive scenario=voip_surge seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:10:44,996 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/voip_surge/run_10
+[55/100] mode=reactive scenario=voip_surge seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:12:00,730 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/voip_surge/run_11
+[56/100] mode=reactive scenario=video_step seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:13:17,170 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/video_step/run_7
+[57/100] mode=reactive scenario=video_step seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:14:33,006 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/video_step/run_8
+[58/100] mode=reactive scenario=video_step seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:15:48,831 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/video_step/run_9
+[59/100] mode=reactive scenario=video_step seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:17:05,764 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/video_step/run_10
+[60/100] mode=reactive scenario=video_step seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:18:22,639 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/reactive/video_step/run_11
+[61/100] mode=proactive scenario=standard seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:19:38,139 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/standard/run_7
+[62/100] mode=proactive scenario=standard seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:20:39,706 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/standard/run_8
+[63/100] mode=proactive scenario=standard seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:21:41,141 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/standard/run_9
+[64/100] mode=proactive scenario=standard seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:22:42,256 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/standard/run_10
+[65/100] mode=proactive scenario=standard seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:23:43,899 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/standard/run_11
+[66/100] mode=proactive scenario=flash_crowd seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:24:44,873 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/flash_crowd/run_7
+[67/100] mode=proactive scenario=flash_crowd seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:25:46,240 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/flash_crowd/run_8
+[68/100] mode=proactive scenario=flash_crowd seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:26:47,823 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/flash_crowd/run_9
+[69/100] mode=proactive scenario=flash_crowd seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:27:49,390 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/flash_crowd/run_10
+[70/100] mode=proactive scenario=flash_crowd seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:28:51,456 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/flash_crowd/run_11
+[71/100] mode=proactive scenario=voip_surge seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:29:53,274 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/voip_surge/run_7
+[72/100] mode=proactive scenario=voip_surge seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:31:10,311 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/voip_surge/run_8
+[73/100] mode=proactive scenario=voip_surge seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:32:27,073 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/voip_surge/run_9
+[74/100] mode=proactive scenario=voip_surge seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:33:45,060 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/voip_surge/run_10
+[75/100] mode=proactive scenario=voip_surge seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:35:01,308 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/voip_surge/run_11
+[76/100] mode=proactive scenario=video_step seed=7
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:36:17,454 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/video_step/run_7
+[77/100] mode=proactive scenario=video_step seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:37:33,504 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/video_step/run_8
+[78/100] mode=proactive scenario=video_step seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:38:49,826 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/video_step/run_9
+[79/100] mode=proactive scenario=video_step seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:40:06,535 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/video_step/run_10
+[80/100] mode=proactive scenario=video_step seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 15:41:22,577 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report_modes/proactive/video_step/run_11
+[81/100] mode=fq_codel_ecn scenario=standard seed=7
+  saved /app/results/report_modes/fq_codel_ecn/standard/run_7
+[82/100] mode=fq_codel_ecn scenario=standard seed=8
+  saved /app/results/report_modes/fq_codel_ecn/standard/run_8
+[83/100] mode=fq_codel_ecn scenario=standard seed=9
+  saved /app/results/report_modes/fq_codel_ecn/standard/run_9
+[84/100] mode=fq_codel_ecn scenario=standard seed=10
+  saved /app/results/report_modes/fq_codel_ecn/standard/run_10
+[85/100] mode=fq_codel_ecn scenario=standard seed=11
+  saved /app/results/report_modes/fq_codel_ecn/standard/run_11
+[86/100] mode=fq_codel_ecn scenario=flash_crowd seed=7
+  saved /app/results/report_modes/fq_codel_ecn/flash_crowd/run_7
+[87/100] mode=fq_codel_ecn scenario=flash_crowd seed=8
+  saved /app/results/report_modes/fq_codel_ecn/flash_crowd/run_8
+[88/100] mode=fq_codel_ecn scenario=flash_crowd seed=9
+  saved /app/results/report_modes/fq_codel_ecn/flash_crowd/run_9
+[89/100] mode=fq_codel_ecn scenario=flash_crowd seed=10
+  saved /app/results/report_modes/fq_codel_ecn/flash_crowd/run_10
+[90/100] mode=fq_codel_ecn scenario=flash_crowd seed=11
+  saved /app/results/report_modes/fq_codel_ecn/flash_crowd/run_11
+[91/100] mode=fq_codel_ecn scenario=voip_surge seed=7
+  saved /app/results/report_modes/fq_codel_ecn/voip_surge/run_7
+[92/100] mode=fq_codel_ecn scenario=voip_surge seed=8
+  saved /app/results/report_modes/fq_codel_ecn/voip_surge/run_8
+[93/100] mode=fq_codel_ecn scenario=voip_surge seed=9
+  saved /app/results/report_modes/fq_codel_ecn/voip_surge/run_9
+[94/100] mode=fq_codel_ecn scenario=voip_surge seed=10
+  saved /app/results/report_modes/fq_codel_ecn/voip_surge/run_10
+[95/100] mode=fq_codel_ecn scenario=voip_surge seed=11
+  saved /app/results/report_modes/fq_codel_ecn/voip_surge/run_11
+[96/100] mode=fq_codel_ecn scenario=video_step seed=7
+  saved /app/results/report_modes/fq_codel_ecn/video_step/run_7
+[97/100] mode=fq_codel_ecn scenario=video_step seed=8
+  saved /app/results/report_modes/fq_codel_ecn/video_step/run_8
+[98/100] mode=fq_codel_ecn scenario=video_step seed=9
+  saved /app/results/report_modes/fq_codel_ecn/video_step/run_9
+[99/100] mode=fq_codel_ecn scenario=video_step seed=10
+  saved /app/results/report_modes/fq_codel_ecn/video_step/run_10
+[100/100] mode=fq_codel_ecn scenario=video_step seed=11
+  saved /app/results/report_modes/fq_codel_ecn/video_step/run_11
+All requested runs finished. Generate aggregates with: python3 analyze.py --results results/report_modes

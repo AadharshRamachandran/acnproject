@@ -1,0 +1,29 @@
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5060
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 49380
+[  5] local 10.0.0.11 port 5060 connected to 10.0.0.1 port 46409
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  11.6 KBytes  94.7 Kbits/sec  0.050 ms  0/74 (0%)  
+[  5]   1.00-2.00   sec  12.3 KBytes   101 Kbits/sec  0.096 ms  0/79 (0%)  
+[  5]   2.00-3.00   sec  12.2 KBytes  99.8 Kbits/sec  0.057 ms  0/78 (0%)  
+[  5]   3.00-4.00   sec  12.2 KBytes  99.8 Kbits/sec  0.064 ms  0/78 (0%)  
+[  5]   4.00-5.00   sec  12.2 KBytes  99.8 Kbits/sec  0.142 ms  0/78 (0%)  
+[  5]   5.00-6.00   sec  12.2 KBytes  99.8 Kbits/sec  0.079 ms  0/78 (0%)  
+[  5]   6.00-7.00   sec  12.2 KBytes  99.8 Kbits/sec  0.120 ms  0/78 (0%)  
+[  5]   7.00-8.00   sec  12.2 KBytes  99.8 Kbits/sec  0.250 ms  0/78 (0%)  
+[  5]   8.00-9.00   sec  12.3 KBytes   101 Kbits/sec  0.431 ms  0/79 (0%)  
+[  5]   9.00-10.00  sec  12.2 KBytes  99.8 Kbits/sec  0.099 ms  0/78 (0%)  
+[  5]  10.00-11.00  sec  12.2 KBytes  99.8 Kbits/sec  0.084 ms  0/78 (0%)  
+[  5]  11.00-12.00  sec  12.2 KBytes  99.8 Kbits/sec  0.199 ms  0/78 (0%)  
+[  5]  12.00-13.00  sec  12.2 KBytes  99.8 Kbits/sec  0.069 ms  0/78 (0%)  
+[  5]  13.00-14.00  sec  12.2 KBytes  99.8 Kbits/sec  0.057 ms  0/78 (0%)  
+[  5]  14.00-15.00  sec  12.2 KBytes  99.8 Kbits/sec  0.069 ms  0/78 (0%)  
+[  5]  15.00-16.00  sec  12.2 KBytes  99.8 Kbits/sec  0.164 ms  0/78 (0%)  
+[  5]  16.00-17.00  sec  12.2 KBytes  99.8 Kbits/sec  0.514 ms  0/78 (0%)  
+[  5]  17.00-18.00  sec  12.3 KBytes   101 Kbits/sec  0.063 ms  0/79 (0%)  
+[  5]  18.00-18.02  sec   160 Bytes  61.6 Kbits/sec  0.059 ms  0/1 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-18.02  sec   219 KBytes  99.7 Kbits/sec  0.059 ms  0/1404 (0%)  receiver

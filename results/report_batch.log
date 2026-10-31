@@ -1,0 +1,37 @@
+﻿docker :  Container acnprojectendsem-testbed-run-18c0372a4bc5 Creating 
+At line:1 char:368
++ ... irm:$false; docker compose run --rm -T testbed bash scripts/run_repor ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Container acnp...a4bc5 Creating :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Container acnprojectendsem-testbed-run-18c0372a4bc5 Created 
+Environment checks passed (Linux, OVS, Mininet, iperf3, tc, Python modules).
+[1/140] mode=fused_pi_forecast_cost scenario=S1 seed=7
+*** Error setting resource limits. Mininet's performance may be affected.
+2026-10-28 16:45:52,099 WARNING *** Error setting resource limits. Mininet's performance may be affected.
+
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:45:53,050 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report/fused_pi_forecast_cost/S1/run_7
+[2/140] mode=fused_pi_forecast_cost scenario=S1 seed=8
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:48:11,289 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report/fused_pi_forecast_cost/S1/run_8
+[3/140] mode=fused_pi_forecast_cost scenario=S1 seed=9
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:50:28,256 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report/fused_pi_forecast_cost/S1/run_9
+[4/140] mode=fused_pi_forecast_cost scenario=S1 seed=10
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:52:45,489 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/report/fused_pi_forecast_cost/S1/run_10
+[5/140] mode=fused_pi_forecast_cost scenario=S1 seed=11
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:55:01,760 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+

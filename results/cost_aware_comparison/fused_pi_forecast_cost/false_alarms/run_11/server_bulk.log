@@ -1,0 +1,40 @@
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+Accepted connection from 10.0.0.3, port 40898
+[  5] local 10.0.0.13 port 5201 connected to 10.0.0.3 port 40912
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec   116 KBytes   950 Kbits/sec                  
+[  5]   1.00-2.00   sec   116 KBytes   950 Kbits/sec                  
+[  5]   2.00-3.00   sec   116 KBytes   950 Kbits/sec                  
+[  5]   3.00-4.00   sec   119 KBytes   973 Kbits/sec                  
+[  5]   4.00-5.00   sec   115 KBytes   938 Kbits/sec                  
+[  5]   5.00-6.00   sec   119 KBytes   973 Kbits/sec                  
+[  5]   6.00-7.00   sec   117 KBytes   962 Kbits/sec                  
+[  5]   7.00-8.00   sec   116 KBytes   950 Kbits/sec                  
+[  5]   8.00-9.00   sec   117 KBytes   962 Kbits/sec                  
+[  5]   9.00-10.00  sec   116 KBytes   950 Kbits/sec                  
+[  5]  10.00-11.00  sec   116 KBytes   950 Kbits/sec                  
+[  5]  11.00-12.00  sec  46.7 KBytes   382 Kbits/sec                  
+[  5]  12.00-13.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  5]  13.00-14.01  sec   122 KBytes   986 Kbits/sec                  
+[  5]  14.01-15.00  sec   175 KBytes  1.45 Mbits/sec                  
+[  5]  15.00-16.00  sec   218 KBytes  1.78 Mbits/sec                  
+[  5]  16.00-17.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  5]  17.00-18.00  sec  19.8 KBytes   162 Kbits/sec                  
+[  5]  18.00-19.00  sec   173 KBytes  1.41 Mbits/sec                  
+[  5]  19.00-20.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  5]  20.00-21.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  5]  21.00-22.00  sec   180 KBytes  1.47 Mbits/sec                  
+[  5]  22.00-23.00  sec   211 KBytes  1.73 Mbits/sec                  
+[  5]  23.00-24.00  sec   119 KBytes   973 Kbits/sec                  
+[  5]  24.00-25.00  sec   116 KBytes   950 Kbits/sec                  
+[  5]  25.00-26.00  sec   117 KBytes   961 Kbits/sec                  
+[  5]  26.00-27.01  sec   116 KBytes   945 Kbits/sec                  
+[  5]  27.01-28.00  sec   117 KBytes   967 Kbits/sec                  
+[  5]  28.00-29.00  sec   116 KBytes   950 Kbits/sec                  
+[  5]  29.00-29.93  sec   109 KBytes   964 Kbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-29.93  sec  3.41 MBytes   956 Kbits/sec                  receiver

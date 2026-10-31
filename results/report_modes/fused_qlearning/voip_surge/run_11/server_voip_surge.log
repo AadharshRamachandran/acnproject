@@ -1,0 +1,30 @@
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 57428
+[  5] local 10.0.0.11 port 5061 connected to 10.0.0.1 port 48789
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  88.9 KBytes   728 Kbits/sec  0.451 ms  363/932 (39%)  
+[  5]   1.00-2.00   sec  93.0 KBytes   762 Kbits/sec  0.961 ms  574/1169 (49%)  
+[  5]   2.00-3.00   sec  92.8 KBytes   760 Kbits/sec  0.598 ms  581/1175 (49%)  
+[  5]   3.00-4.00   sec  93.4 KBytes   765 Kbits/sec  0.488 ms  574/1172 (49%)  
+[  5]   4.00-5.00   sec  94.1 KBytes   771 Kbits/sec  0.461 ms  570/1172 (49%)  
+[  5]   5.00-6.00   sec  93.3 KBytes   764 Kbits/sec  0.508 ms  575/1172 (49%)  
+[  5]   6.00-7.00   sec  92.7 KBytes   759 Kbits/sec  0.479 ms  577/1170 (49%)  
+[  5]   7.00-8.00   sec  93.8 KBytes   768 Kbits/sec  0.492 ms  573/1173 (49%)  
+[  5]   8.00-9.00   sec  93.6 KBytes   767 Kbits/sec  0.494 ms  573/1172 (49%)  
+[  5]   9.00-10.00  sec  93.1 KBytes   763 Kbits/sec  0.472 ms  576/1172 (49%)  
+[  5]  10.00-11.00  sec  92.7 KBytes   759 Kbits/sec  0.467 ms  579/1172 (49%)  
+[  5]  11.00-12.00  sec  93.6 KBytes   767 Kbits/sec  0.410 ms  574/1173 (49%)  
+[  5]  12.00-13.00  sec  94.1 KBytes   771 Kbits/sec  0.555 ms  568/1170 (49%)  
+[  5]  13.00-14.00  sec  93.1 KBytes   763 Kbits/sec  0.450 ms  576/1172 (49%)  
+[  5]  14.00-15.00  sec  93.4 KBytes   765 Kbits/sec  0.575 ms  574/1172 (49%)  
+[  5]  15.00-15.20  sec  19.2 KBytes   769 Kbits/sec  0.537 ms  116/239 (49%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-15.2 sec  1 datagrams received out-of-order
+[  5]   0.00-15.20  sec  1.38 MBytes   762 Kbits/sec  0.537 ms  8523/17577 (48%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------

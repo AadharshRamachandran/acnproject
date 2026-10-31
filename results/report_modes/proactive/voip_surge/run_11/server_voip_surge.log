@@ -1,0 +1,30 @@
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 37704
+[  5] local 10.0.0.11 port 5061 connected to 10.0.0.1 port 40179
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec   104 KBytes   854 Kbits/sec  0.831 ms  430/1097 (39%)  
+[  5]   1.00-2.00   sec   186 KBytes  1.52 Mbits/sec  0.669 ms  0/1188 (0%)  
+[  5]   2.00-3.00   sec   183 KBytes  1.50 Mbits/sec  0.580 ms  0/1171 (0%)  
+[  5]   3.00-4.00   sec   183 KBytes  1.50 Mbits/sec  0.631 ms  0/1174 (0%)  
+[  5]   4.00-5.00   sec   183 KBytes  1.50 Mbits/sec  0.687 ms  0/1172 (0%)  
+[  5]   5.00-6.00   sec   183 KBytes  1.50 Mbits/sec  0.586 ms  0/1171 (0%)  
+[  5]   6.00-7.00   sec   183 KBytes  1.50 Mbits/sec  0.671 ms  0/1172 (0%)  
+[  5]   7.00-8.00   sec   180 KBytes  1.48 Mbits/sec  1.009 ms  0/1155 (0%)  
+[  5]   8.00-9.00   sec  92.5 KBytes   758 Kbits/sec  0.969 ms  414/1006 (41%)  
+[  5]   9.00-10.00  sec  94.1 KBytes   771 Kbits/sec  1.089 ms  572/1174 (49%)  
+[  5]  10.00-11.00  sec   112 KBytes   917 Kbits/sec  0.752 ms  635/1351 (47%)  
+[  5]  11.00-12.00  sec   183 KBytes  1.50 Mbits/sec  0.714 ms  0/1172 (0%)  
+[  5]  12.00-13.00  sec   183 KBytes  1.50 Mbits/sec  0.667 ms  0/1172 (0%)  
+[  5]  13.00-14.00  sec   183 KBytes  1.50 Mbits/sec  0.694 ms  0/1172 (0%)  
+[  5]  14.00-15.00  sec   183 KBytes  1.50 Mbits/sec  0.723 ms  0/1171 (0%)  
+[  5]  15.00-15.05  sec  9.38 KBytes  1.49 Mbits/sec  0.600 ms  0/60 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-15.1 sec  2 datagrams received out-of-order
+[  5]   0.00-15.05  sec  2.37 MBytes  1.32 Mbits/sec  0.600 ms  2051/17578 (12%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------

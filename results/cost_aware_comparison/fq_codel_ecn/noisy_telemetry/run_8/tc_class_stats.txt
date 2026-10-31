@@ -1,0 +1,28 @@
+tick=0 monotonic_s=13826.242796
+class htb 1:1 root leaf 20: prio 0 rate 10Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 584 bytes 7 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ lended: 7 borrowed: 0 giants: 0
+ tokens: 18712 ctokens: 18712
+
+class fq_codel 20:6b parent 20: 
+ (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  deficit 1345 count 0 lastcount 0 ldelay 1us
+
+tick=44 monotonic_s=13870.243465
+class htb 1:1 root leaf 20: prio 0 rate 10Mbit ceil 10Mbit burst 1600b cburst 1600b 
+ Sent 44073726 bytes 35545 pkt (dropped 0, overlimits 21692 requeues 0) 
+ backlog 5784b 3p requeues 0
+ lended: 29233 borrowed: 0 giants: 0
+ tokens: -14288 ctokens: -14288
+
+class fq_codel 20:215 parent 20: 
+ (dropped 0, overlimits 0 requeues 0) 
+ backlog 4542b 2p requeues 0
+  deficit 4294965782 count 1 lastcount 1 ldelay 4.8ms
+class fq_codel 20:23a parent 20: 
+ (dropped 0, overlimits 0 requeues 0) 
+ backlog 1242b 1p requeues 0
+  deficit 272 count 0 lastcount 0 ldelay 2.0ms
+

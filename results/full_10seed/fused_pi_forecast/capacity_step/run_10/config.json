@@ -1,0 +1,340 @@
+{
+  "config": {
+    "runtime": {
+      "seed": 7,
+      "tick_seconds": 1.0,
+      "min_tick_seconds": 0.5,
+      "max_tick_seconds": 2.0,
+      "telemetry_host": "127.0.0.1",
+      "telemetry_port": 5801,
+      "controller_ip": "127.0.0.1",
+      "controller_port": 6653,
+      "controller_auto_start": true,
+      "controller_start_timeout_seconds": 60,
+      "switch_dpid": 1,
+      "bottleneck_port_no": 4,
+      "results_dir": "results",
+      "stale_ticks": 3,
+      "mn_cleanup": true
+    },
+    "network": {
+      "bandwidth_mbps": 10,
+      "delay_ms": 5,
+      "queue_size": 100,
+      "server_ips": {
+        "voip": "10.0.0.11",
+        "video": "10.0.0.12",
+        "bulk": "10.0.0.13"
+      },
+      "source_ips": {
+        "voip": "10.0.0.1",
+        "video": "10.0.0.2",
+        "bulk": "10.0.0.3"
+      },
+      "ports": {
+        "voip": 5060,
+        "video": 5004,
+        "bulk": 5201
+      },
+      "queue_ids": {
+        "default": 0,
+        "voip": 1,
+        "video": 2,
+        "bulk": 3
+      }
+    },
+    "traffic": {
+      "voip_rate": "100K",
+      "voip_packet_bytes": 160,
+      "voip_interval_ms": 20,
+      "video_rate": "4M",
+      "video_packet_bytes": 1200,
+      "bulk_flows": 1
+    },
+    "sla": {
+      "voip_rtt_ms": 20.0,
+      "video_min_mbps": 3.6,
+      "class_targets_mbps": {
+        "voip": 0.1,
+        "video": 4.0,
+        "bulk": 1.0
+      }
+    },
+    "qos": {
+      "link_capacity_bps": 10000000,
+      "default": {
+        "min_bps": 100000,
+        "max_bps": 10000000,
+        "priority": 4
+      },
+      "queues": {
+        "voip": {
+          "min_bps": 500000,
+          "max_bps": 1000000,
+          "priority": 1,
+          "floor_bps": 500000
+        },
+        "video": {
+          "min_bps": 4000000,
+          "max_bps": 6000000,
+          "priority": 2,
+          "floor_bps": 4000000
+        },
+        "bulk": {
+          "min_bps": 1000000,
+          "max_bps": 10000000,
+          "priority": 3,
+          "floor_bps": 500000
+        }
+      },
+      "static_rates": {
+        "voip": {
+          "min_bps": 500000,
+          "max_bps": 1000000
+        },
+        "video": {
+          "min_bps": 4000000,
+          "max_bps": 6000000
+        },
+        "bulk": {
+          "min_bps": 1000000,
+          "max_bps": 10000000
+        }
+      }
+    },
+    "detectors": {
+      "ground_truth": {
+        "congestion_utilization": 0.9
+      },
+      "threshold": {
+        "utilization": 0.85,
+        "voip_rtt_ms": 20.0,
+        "exit_calm_ticks": 3
+      },
+      "stat": {
+        "calibration_seconds": 10,
+        "ewma_alpha": 0.2,
+        "std_floor": 0.01,
+        "deviation_threshold": 3.0,
+        "cusum_k": 0.5,
+        "cusum_h": 5.0,
+        "exit_calm_ticks": 3
+      },
+      "anomaly": {
+        "window": 30,
+        "calibration_seconds": 10,
+        "contamination": 0.08,
+        "random_state": 7
+      },
+      "supervised": {
+        "model_path": "results/supervised_detector.joblib",
+        "label_rtt_ms": 20.0
+      },
+      "fused": {
+        "warning_score": 1.0,
+        "congested_score": 2.0
+      }
+    },
+    "forecaster": {
+      "horizon_seconds": 3,
+      "alpha": 0.35,
+      "beta": 0.15,
+      "forecast_mae_limit": 0.5
+    },
+    "engines": {
+      "rule_aimd": {
+        "bulk_shrink": 0.5,
+        "bulk_restore_bps": 1000000,
+        "voip_min_bps": 1000000,
+        "video_min_bps": 5000000
+      },
+      "pi": {
+        "kp": 0.6,
+        "ki": 0.1,
+        "leak": 0.9,
+        "integral_max": 5.0,
+        "voip_queue_target_ms": 3.0,
+        "dwell_ticks": 2
+      },
+      "qlearning": {
+        "episodes": 1000,
+        "alpha": 0.12,
+        "gamma": 0.92,
+        "epsilon": 0.3,
+        "epsilon_min": 0.03,
+        "epsilon_decay": 0.995,
+        "eval_epsilon": 0.0,
+        "bulk_step_bps": 500000,
+        "voip_step_bps": 250000,
+        "video_step_bps": 500000
+      },
+      "forecast_weight": {
+        "bulk_shrink": 0.75
+      },
+      "reward": {
+        "sla_violation": 4.0,
+        "policy_change": 0.1,
+        "fairness": 1.0,
+        "bulk_starvation": 2.0
+      }
+    },
+    "guards": {
+      "enabled": true,
+      "fairness": {
+        "bulk_floor_bps": 500000,
+        "minimum_jain": 0.6
+      },
+      "safety": {
+        "cooldown_ticks": 3,
+        "stale_after_ticks": 3,
+        "forecast_mae_limit": 0.5,
+        "max_changes_per_window": 5,
+        "change_window_ticks": 10
+      }
+    },
+    "scenarios": {
+      "standard": {
+        "duration": 45,
+        "bulk_start": 15
+      },
+      "repeated_bursts": {
+        "duration": 60,
+        "bursts": [
+          [
+            10,
+            18
+          ],
+          [
+            28,
+            36
+          ],
+          [
+            46,
+            54
+          ]
+        ]
+      },
+      "flash_crowd": {
+        "duration": 45,
+        "bulk_start": 15,
+        "bulk_flows": 3
+      },
+      "capacity_step": {
+        "duration": 50,
+        "bulk_start": 15,
+        "capacity_steps": [
+          [
+            25,
+            5
+          ],
+          [
+            38,
+            10
+          ]
+        ]
+      },
+      "noisy_telemetry": {
+        "duration": 45,
+        "bulk_start": 15,
+        "probe_loss_probability": 0.2,
+        "counter_jitter_fraction": 0.08
+      },
+      "misclassified": {
+        "duration": 45,
+        "bulk_start": 15,
+        "misclass_start": 20,
+        "misclass_duration": 10
+      },
+      "false_alarms": {
+        "duration": 45,
+        "bulk_start": 15,
+        "alarm_count": 3,
+        "alarm_duration": 2,
+        "calm_before_bulk_only": true
+      },
+      "voip_surge": {
+        "duration": 60,
+        "bulk_start": 10,
+        "voip_calls": [
+          [
+            20,
+            15
+          ]
+        ],
+        "voip_surge_rate_mbps": 1.5
+      },
+      "video_step": {
+        "duration": 60,
+        "bulk_start": 10,
+        "video_rate_steps": [
+          [
+            25,
+            7
+          ]
+        ]
+      },
+      "baseline_shift": {
+        "duration": 60,
+        "bulk_start": 15,
+        "delay_steps": [
+          [
+            30,
+            20
+          ]
+        ]
+      },
+      "bulk_ramp": {
+        "duration": 60,
+        "bulk_ramp": [
+          [
+            15,
+            3
+          ],
+          [
+            25,
+            5
+          ],
+          [
+            35,
+            7
+          ],
+          [
+            45,
+            9
+          ]
+        ]
+      }
+    },
+    "experiment": {
+      "default_scenarios": [
+        "standard",
+        "repeated_bursts",
+        "flash_crowd",
+        "capacity_step",
+        "noisy_telemetry",
+        "misclassified",
+        "false_alarms"
+      ],
+      "default_modes": [
+        "none",
+        "static",
+        "threshold_rule",
+        "stat_pi",
+        "fused_pi",
+        "fused_pi_forecast",
+        "fused_qlearning",
+        "fused_qlearning_unshielded",
+        "supervised_rule",
+        "forecast_weight",
+        "fq_codel_ecn"
+      ]
+    }
+  },
+  "run": {
+    "mode": "fused_pi_forecast",
+    "scenario": "capacity_step",
+    "seed": 10,
+    "guards_enabled": true,
+    "q_table": "results/q_table.json"
+  }
+}

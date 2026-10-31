@@ -26,6 +26,7 @@ from common import config as cfg
 
 S1_DPID = 1
 PORT_TO_QUEUE = {port: cfg.CLASS_QUEUE[name] for name, port in cfg.CLASS_PORTS.items()}
+PORT_TO_QUEUE.update({port: cfg.CLASS_QUEUE[name] for name, port in cfg.PROBE_PORTS.items()})
 
 
 class QoSController(app_manager.RyuApp):

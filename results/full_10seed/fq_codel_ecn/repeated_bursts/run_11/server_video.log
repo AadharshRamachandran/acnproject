@@ -1,0 +1,30 @@
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5004
+-----------------------------------------------------------
+Accepted connection from 10.0.0.2, port 44812
+[  5] local 10.0.0.12 port 5004 connected to 10.0.0.2 port 60050
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec   464 KBytes  3.80 Mbits/sec  0.162 ms  0/396 (0%)  
+[  5]   1.00-2.00   sec   489 KBytes  4.00 Mbits/sec  0.419 ms  0/417 (0%)  
+[  5]   2.00-3.00   sec   488 KBytes  3.99 Mbits/sec  0.217 ms  0/416 (0%)  
+[  5]   3.00-4.00   sec   489 KBytes  4.00 Mbits/sec  0.100 ms  0/417 (0%)  
+[  5]   4.00-5.00   sec   489 KBytes  4.00 Mbits/sec  0.081 ms  0/417 (0%)  
+[  5]   5.00-6.00   sec   488 KBytes  3.99 Mbits/sec  0.113 ms  0/416 (0%)  
+[  5]   6.00-7.00   sec   489 KBytes  4.00 Mbits/sec  0.050 ms  0/417 (0%)  
+[  5]   7.00-8.00   sec   489 KBytes  4.00 Mbits/sec  0.107 ms  0/417 (0%)  
+[  5]   8.00-9.00   sec   488 KBytes  3.99 Mbits/sec  0.098 ms  0/416 (0%)  
+[  5]   9.00-10.00  sec   489 KBytes  4.00 Mbits/sec  0.126 ms  0/417 (0%)  
+[  5]  10.00-11.00  sec   488 KBytes  3.99 Mbits/sec  0.965 ms  0/416 (0%)  
+[  5]  11.00-12.00  sec   489 KBytes  4.00 Mbits/sec  0.769 ms  0/417 (0%)  
+[  5]  12.00-13.00  sec   480 KBytes  3.94 Mbits/sec  2.253 ms  0/410 (0%)  
+[  5]  13.00-14.00  sec   496 KBytes  4.06 Mbits/sec  0.932 ms  0/423 (0%)  
+[  5]  14.00-15.00  sec   489 KBytes  4.00 Mbits/sec  0.885 ms  0/417 (0%)  
+[  5]  15.00-16.00  sec   489 KBytes  4.00 Mbits/sec  1.056 ms  0/417 (0%)  
+[  5]  16.00-17.00  sec   488 KBytes  3.99 Mbits/sec  1.248 ms  0/416 (0%)  
+[  5]  17.00-18.00  sec   489 KBytes  4.00 Mbits/sec  0.896 ms  0/417 (0%)  
+[  5]  18.00-18.02  sec  7.03 KBytes  3.42 Mbits/sec  0.855 ms  0/6 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-18.0 sec  1 datagrams received out-of-order
+[  5]   0.00-18.02  sec  8.57 MBytes  3.99 Mbits/sec  0.855 ms  0/7485 (0%)  receiver

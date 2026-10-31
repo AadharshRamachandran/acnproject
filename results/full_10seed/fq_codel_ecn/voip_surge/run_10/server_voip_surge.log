@@ -1,0 +1,30 @@
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 36532
+[  5] local 10.0.0.11 port 5061 connected to 10.0.0.1 port 37488
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec   173 KBytes  1.42 Mbits/sec  0.672 ms  0/1109 (0%)  
+[  5]   1.00-2.00   sec   183 KBytes  1.50 Mbits/sec  0.616 ms  0/1171 (0%)  
+[  5]   2.00-3.00   sec   183 KBytes  1.50 Mbits/sec  0.573 ms  0/1173 (0%)  
+[  5]   3.00-4.00   sec   183 KBytes  1.50 Mbits/sec  0.805 ms  0/1171 (0%)  
+[  5]   4.00-5.00   sec   183 KBytes  1.50 Mbits/sec  0.627 ms  0/1173 (0%)  
+[  5]   5.00-6.00   sec   183 KBytes  1.50 Mbits/sec  0.729 ms  0/1169 (0%)  
+[  5]   6.00-7.00   sec   184 KBytes  1.50 Mbits/sec  0.483 ms  0/1175 (0%)  
+[  5]   7.00-8.00   sec   176 KBytes  1.44 Mbits/sec  0.590 ms  0/1125 (0%)  
+[  5]   8.00-9.00   sec   183 KBytes  1.50 Mbits/sec  0.667 ms  45/1218 (3.7%)  
+[  5]   9.00-10.00  sec   183 KBytes  1.50 Mbits/sec  0.581 ms  0/1170 (0%)  
+[  5]  10.00-11.00  sec   183 KBytes  1.50 Mbits/sec  0.796 ms  0/1174 (0%)  
+[  5]  11.00-12.00  sec   182 KBytes  1.49 Mbits/sec  0.685 ms  10/1172 (0.85%)  
+[  5]  12.00-13.00  sec   183 KBytes  1.50 Mbits/sec  0.722 ms  0/1172 (0%)  
+[  5]  13.00-14.00  sec   183 KBytes  1.50 Mbits/sec  0.679 ms  0/1172 (0%)  
+[  5]  14.00-15.00  sec   183 KBytes  1.50 Mbits/sec  0.588 ms  0/1172 (0%)  
+[  5]  15.00-15.06  sec  9.69 KBytes  1.44 Mbits/sec  0.567 ms  0/62 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[SUM]  0.0-15.1 sec  3 datagrams received out-of-order
+[  5]   0.00-15.06  sec  2.67 MBytes  1.49 Mbits/sec  0.567 ms  55/17578 (0.31%)  receiver
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5061
+-----------------------------------------------------------

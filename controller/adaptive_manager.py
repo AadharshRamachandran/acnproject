@@ -68,7 +68,7 @@ class AdaptiveQoSManager:
                     if action != "hold":
                         self.log(f"[adaptive] t={sample['t']} {reason} -> {action} "
                                  f"bulk_max={self.bulk_max/1e6:.2f}M")
-                self._stop.wait(cfg.SAMPLE_INTERVAL_S / 2)
+                self._stop.wait(getattr(self.collector, "interval", cfg.SAMPLE_INTERVAL_S) / 2)
 
     def _decide(self, congested):
         a = cfg.ADAPTIVE

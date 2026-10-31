@@ -1,0 +1,2 @@
+t,mode,detector,engine,severity,old_rates,new_rates,reason,rejected,actuation_latency_s
+26.001027432997944,stat_pi,stat,pi,2,"{""voip"": {""min_bps"": 500000, ""max_bps"": 1000000}, ""video"": {""min_bps"": 4000000, ""max_bps"": 6000000}, ""bulk"": {""min_bps"": 1000000, ""max_bps"": 10000000}}","{""voip"": {""min_bps"": 500000, ""max_bps"": 10000000}, ""video"": {""min_bps"": 4000000, ""max_bps"": 10000000}, ""bulk"": {""min_bps"": 1000000, ""max_bps"": 1000000}}",PI u=1.00,False,1.0239962400009972

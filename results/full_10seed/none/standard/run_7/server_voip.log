@@ -1,0 +1,55 @@
+iperf3: interrupt - the server has terminated
+-----------------------------------------------------------
+Server listening on 5060
+-----------------------------------------------------------
+Accepted connection from 10.0.0.1, port 34872
+[  5] local 10.0.0.11 port 5060 connected to 10.0.0.1 port 55743
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  11.7 KBytes  96.0 Kbits/sec  0.044 ms  0/75 (0%)  
+[  5]   1.00-2.00   sec  12.2 KBytes  99.8 Kbits/sec  0.116 ms  0/78 (0%)  
+[  5]   2.00-3.00   sec  12.2 KBytes  99.8 Kbits/sec  0.064 ms  0/78 (0%)  
+[  5]   3.00-4.00   sec  12.2 KBytes  99.8 Kbits/sec  0.037 ms  0/78 (0%)  
+[  5]   4.00-5.00   sec  12.2 KBytes  99.8 Kbits/sec  0.038 ms  0/78 (0%)  
+[  5]   5.00-6.00   sec  12.2 KBytes  99.8 Kbits/sec  0.052 ms  0/78 (0%)  
+[  5]   6.00-7.00   sec  12.2 KBytes  99.8 Kbits/sec  0.049 ms  0/78 (0%)  
+[  5]   7.00-8.00   sec  12.3 KBytes   101 Kbits/sec  0.061 ms  0/79 (0%)  
+[  5]   8.00-9.00   sec  12.2 KBytes  99.8 Kbits/sec  0.112 ms  0/78 (0%)  
+[  5]   9.00-10.00  sec  12.2 KBytes  99.8 Kbits/sec  0.051 ms  0/78 (0%)  
+[  5]  10.00-11.00  sec  12.2 KBytes  99.8 Kbits/sec  0.195 ms  0/78 (0%)  
+[  5]  11.00-12.00  sec  12.2 KBytes  99.8 Kbits/sec  0.043 ms  0/78 (0%)  
+[  5]  12.00-13.00  sec  12.2 KBytes  99.8 Kbits/sec  0.061 ms  0/78 (0%)  
+[  5]  13.00-14.00  sec  12.2 KBytes  99.8 Kbits/sec  0.061 ms  0/78 (0%)  
+[  5]  14.00-15.00  sec  12.2 KBytes  99.8 Kbits/sec  0.041 ms  0/78 (0%)  
+[  5]  15.00-16.00  sec  10.9 KBytes  89.6 Kbits/sec  1.254 ms  0/70 (0%)  
+[  5]  16.00-17.00  sec  12.3 KBytes   101 Kbits/sec  1.100 ms  0/79 (0%)  
+[  5]  17.00-18.00  sec  11.9 KBytes  97.3 Kbits/sec  1.623 ms  0/76 (0%)  
+[  5]  18.00-19.00  sec  12.5 KBytes   102 Kbits/sec  1.419 ms  0/80 (0%)  
+[  5]  19.00-20.00  sec  12.2 KBytes  99.8 Kbits/sec  0.824 ms  0/78 (0%)  
+[  5]  20.00-21.00  sec  12.2 KBytes  99.8 Kbits/sec  0.937 ms  0/78 (0%)  
+[  5]  21.00-22.00  sec  12.0 KBytes  98.6 Kbits/sec  1.397 ms  0/77 (0%)  
+[  5]  22.00-23.00  sec  12.2 KBytes  99.8 Kbits/sec  1.395 ms  0/78 (0%)  
+[  5]  23.00-24.00  sec  12.3 KBytes   101 Kbits/sec  1.153 ms  0/79 (0%)  
+[  5]  24.00-25.00  sec  12.0 KBytes  98.6 Kbits/sec  1.367 ms  0/77 (0%)  
+[  5]  25.00-26.00  sec  12.5 KBytes   102 Kbits/sec  1.541 ms  0/80 (0%)  
+[  5]  26.00-27.00  sec  12.0 KBytes  98.6 Kbits/sec  1.253 ms  0/77 (0%)  
+[  5]  27.00-28.00  sec  12.0 KBytes  98.6 Kbits/sec  0.884 ms  0/77 (0%)  
+[  5]  28.00-29.00  sec  12.5 KBytes   102 Kbits/sec  1.280 ms  0/80 (0%)  
+[  5]  29.00-30.00  sec  12.0 KBytes  98.6 Kbits/sec  1.201 ms  0/77 (0%)  
+[  5]  30.00-31.00  sec  12.2 KBytes  99.8 Kbits/sec  1.421 ms  0/78 (0%)  
+[  5]  31.00-32.00  sec  12.3 KBytes   101 Kbits/sec  1.332 ms  0/79 (0%)  
+[  5]  32.00-33.00  sec  12.0 KBytes  98.6 Kbits/sec  1.248 ms  0/77 (0%)  
+[  5]  33.00-34.00  sec  12.5 KBytes   102 Kbits/sec  1.518 ms  1/81 (1.2%)  
+[  5]  34.00-35.00  sec  12.0 KBytes  98.6 Kbits/sec  1.111 ms  0/77 (0%)  
+[  5]  35.00-36.00  sec  12.2 KBytes  99.8 Kbits/sec  1.454 ms  0/78 (0%)  
+[  5]  36.00-37.00  sec  12.0 KBytes  98.6 Kbits/sec  1.040 ms  0/77 (0%)  
+[  5]  37.00-38.00  sec  12.2 KBytes  99.8 Kbits/sec  1.066 ms  0/78 (0%)  
+[  5]  38.00-39.00  sec  12.3 KBytes   101 Kbits/sec  2.022 ms  3/82 (3.7%)  
+[  5]  39.00-40.00  sec  12.2 KBytes  99.8 Kbits/sec  1.292 ms  0/78 (0%)  
+[  5]  40.00-41.00  sec  12.0 KBytes  98.6 Kbits/sec  1.199 ms  0/77 (0%)  
+[  5]  41.00-42.00  sec  12.0 KBytes  98.6 Kbits/sec  1.194 ms  0/77 (0%)  
+[  5]  42.00-43.00  sec  12.2 KBytes  99.8 Kbits/sec  1.205 ms  0/78 (0%)  
+[  5]  43.00-44.00  sec  12.0 KBytes  98.6 Kbits/sec  0.809 ms  0/77 (0%)  
+[  5]  44.00-44.91  sec  10.9 KBytes  98.5 Kbits/sec  1.073 ms  0/70 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-44.91  sec   545 KBytes  99.5 Kbits/sec  1.073 ms  4/3495 (0.11%)  receiver

@@ -1,0 +1,45 @@
+﻿cmd :  Container acnprojectendsem-testbed-run-fb143d512b2a Creating 
+At line:1 char:558
++ ... --pause 1'; cmd /c "$base --modes fq_codel_ecn --scenarios S1 && pyth ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Container acnp...12b2a Creating :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Container acnprojectendsem-testbed-run-fb143d512b2a Created 
+Environment checks passed (Linux, OVS, Mininet, iperf3, tc, Python modules).
+[1/1] mode=fq_codel_ecn scenario=S1 seed=7
+*** Error setting resource limits. Mininet's performance may be affected.
+2026-10-28 16:34:31,546 WARNING *** Error setting resource limits. Mininet's performance may be affected.
+
+  saved /app/results/smoke_report/fq_codel_ecn/S1/run_7
+All requested runs finished. Generate aggregates with: python3 analyze.py --results results/smoke_report
+Environment checks passed (Linux, OVS, Mininet, iperf3, tc, Python modules).
+[1/1] mode=static scenario=S2 seed=7
+*** Error setting resource limits. Mininet's performance may be affected.
+2026-10-28 16:36:53,749 WARNING *** Error setting resource limits. Mininet's performance may be affected.
+
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:36:54,668 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/smoke_report/static/S2/run_7
+All requested runs finished. Generate aggregates with: python3 analyze.py --results results/smoke_report
+Environment checks passed (Linux, OVS, Mininet, iperf3, tc, Python modules).
+[1/1] mode=proactive scenario=S3 seed=7
+*** Error setting resource limits. Mininet's performance may be affected.
+2026-10-28 16:39:15,957 WARNING *** Error setting resource limits. Mininet's performance may be affected.
+
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:39:16,842 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/smoke_report/proactive/S3/run_7
+All requested runs finished. Generate aggregates with: python3 analyze.py --results results/smoke_report
+Environment checks passed (Linux, OVS, Mininet, iperf3, tc, Python modules).
+[1/1] mode=reactive scenario=S4 seed=7
+*** Error setting resource limits. Mininet's performance may be affected.
+2026-10-28 16:41:40,127 WARNING *** Error setting resource limits. Mininet's performance may be affected.
+
+Unable to contact the remote controller at 127.0.0.1:6653
+2026-10-28 16:41:40,959 WARNING Unable to contact the remote controller at 127.0.0.1:6653
+
+  saved /app/results/smoke_report/reactive/S4/run_7
+All requested runs finished. Generate aggregates with: python3 analyze.py --results results/smoke_report
